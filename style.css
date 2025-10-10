@@ -19,9 +19,20 @@ p {
   font-size: 2vw;                                                    /* Taille du texte en fonction de la largeur de la fenêtre */
 }
 
-.responsive {
-  font-size: 2vw;
-  max-width: 100%;                                                   /* Empêche le texte de dépasser la largeur de son conteneur */
+@media (max-width: 600px) {
+  .banniere, .arc, .fleur {
+    width: 100vw;
+    height: auto;
+    left: 0;
+    top: auto;
+    position: relative;
+  }
+  button {
+    width: 90vw;
+    margin: 10px 0;
+    font-size: 18px;
+    position: static;
+  }
 }
 
 /* menu deroulant pas actif*/

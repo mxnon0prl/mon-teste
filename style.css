@@ -19,94 +19,42 @@ p {
   font-size: 2vw;                                                    /* Taille du texte en fonction de la largeur de la fenêtre */
 }
 
-@media (max-width: 600px) {
-  .banniere, .arc, .fleur {
-    width: 100vw;
-    height: auto;
-    left: 0;
-    top: auto;
-    position: relative;
-  }
-  button {
-    width: 90vw;
-    margin: 10px 0;
-    font-size: 18px;
-    position: static;
-  }
-}
-
-/* menu deroulant pas actif*/
-
-.navbar {
-  position: fixed;                                                    /* Fixe le menu en haut de la page */
-  top: 0px; left: 0px;                                                /* Placement du menu */
-  width: 100%;                                                        /* Transparance du menu */
-  height: 50px;                                                       /* Bande dessous du menu */
-  background: #63300e;                                              /* Couleur du menu */
-  box-shadow: 0 5px 20px rgba(100, 73, 0, 0.768);                   /* Degrader dessous du menu */
-  z-index: 1000;                                                      /* Fixe le menu au-dessus des autres éléments */
-  display: flex;                                                      /* Affiche les éléments du menu en ligne */
-  align-items: center;                                                /* Centre verticalement les éléments du menu */
-}
-
-.navbar ul {
-  display: flex;                                                      /* Affiche les éléments de la liste en ligne */
-  list-style-type: none;                                              /* Supprime les puces de la liste */
-  margin: 0;                                                          /* Supprime les marges de la liste */
-  padding: 0;                                                         /* Supprime le rembourrage de la liste */
-  height: 100%;                                                       /* Hauteur de la liste */
-}
-
-.navbar ul li a {
-  display: flex;
-  align-items: center;                                                /* Alignement texte menu */
-  height: 50px;                                                       /* Deplacement texte menu */
-  color: #a1b7c4;                                                   /* Couleur du texte menu */
-  padding: 0 25px;                                                    /* Espacement texte menu */
-  text-decoration: none;                                              /* Suppression soulignement */
-}
-
-.navbar ul li a:hover {
-  background-color: #63300e;                                        /* Couleur de fond au survol */
-}
-
 .content {
   margin-top: 50px;                                                   /* Décale le contenu sous la barre horizontale */
   padding: 40px;                                                      /* Espacement intérieur du contenu */
 }
 /* Banniere*/
 
-.banniere {
-  z-index: 2;                                                          /* Place la bannière en arrière-plan */
+.banniere {                                                         
   position: absolute;                                                  /* Positionnement absolu */
   top: 0px;                                                            /* Positionnement vertical */
   left: 0px;                                                           /* Positionnement horizontal */
-  width: 100vw;                                                       /* Largeur de la bannière */
-  height: 550px;                                                       /* Hauteur de la bannière */
+  width: 1330px;                                                       /* Largeur de la bannière */
+  height: 650px;                                                       /* Hauteur de la bannière */
   background-image: url('banniere/bannier2.png');                      /* Image de fond */
   background-size: cover;                                              /* Couvre toute la zone */
   background-position: center;                                         /* Centre l'image */
-  z-index: 2;                                                          /* Place la bannière au-dessus de l'arc */
+  z-index: 1;                                                          /* Place la bannière au-dessus de l'arc */
 }
 
 .arc {
   position: absolute;
-  top: 430px;
+  top: 500px;
   left: 0px;
-  width: 100vw;
-  height: 650px;
+  width: 1330px;
+  height: 625px;
   background-image: url('banniere/arc_de_cercle.png');
   background-size: cover;
   background-position: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 .fleur {
   position: absolute;
-  top: 250px;
-  left: 980px;
-  width: 530px;
-  height: 500px;
+  top: 300px;
+  left: 850px;
+  width: 480px;
+  height: 460px;
   opacity: 0.8;                                                        /* Transparence de l'image */
   background-image: url('banniere/bannier_arc.png');
   background-size: cover;
@@ -114,10 +62,11 @@ p {
   z-index: 3;
 }
 
+
 #nous {
   position: absolute;
-  top: 640px;
-  left: 16%;
+  top: 700px;
+  left: 15%;
   transform: translate(-50%);
   width: 100px;
   height: 160px;
@@ -133,8 +82,8 @@ p {
 
   #contenaire {
   position: absolute;
-  top: 640px;
-  left: 34%;
+  top: 700px;
+  left: 32%;
   transform: translate(-50%);
   width: 100px;
   height: 160px;
@@ -150,7 +99,7 @@ p {
 
    #transport {
   position: absolute;
-  top: 640px;
+  top: 700px;
   left: 50%;
   transform: translate(-50%);                                          /* Centre horizontalement */
   width: 100px;
@@ -167,7 +116,7 @@ p {
 
   #impex {
   position: absolute;
-  top: 640px;
+  top: 700px;
   left: 67.5%;
   transform: translate(-50%);                                          /* Centre horizontalement */
   width: 100px;
@@ -184,7 +133,7 @@ p {
 
    #contact {
   position: absolute;
-  top: 640px;
+  top: 700px;
   left: 85%;
   transform: translate(-50%);                                          /* Centre horizontalement */
   width: 100px;

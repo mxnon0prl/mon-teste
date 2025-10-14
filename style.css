@@ -1,48 +1,42 @@
-/* Page de base */
+/* ================================
+   🌐 STYLE GLOBAL
+   ================================ */
 
 body {
-  background: #a1b7c4;                                              /* Couleur de fond claire */
-  font-family: Arial, sans-serif;                                     /* Police générale de la page */
-  color: #feffff;                                                   /* Couleur du texte par défaut */
-  margin: 40px;                                                       /* Marge autour du contenu */
+  background: #a1b7c4;
+  font-family: Arial, sans-serif;
+  color: #feffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {
-  color: #ffffff;                                                   /* Couleur du titre principal */
+  color: #ffffff;
 }
 
 p {
-  font-size: 18px;                                                    /* Taille du texte des paragraphes */
+  font-size: 18px;
 }
 
-.responsive {
-  font-size: 2vw;                                                    /* Taille du texte en fonction de la largeur de la fenêtre */
-}
+/* ================================
+   🖼️ BANNIÈRES ET IMAGES
+   ================================ */
 
-.content {
-  margin-top: 50px;                                                   /* Décale le contenu sous la barre horizontale */
-  padding: 40px;                                                      /* Espacement intérieur du contenu */
-}
-/* Banniere*/
-
-.banniere {                                                         
-  position: absolute;                                                  /* Positionnement absolu */
-  top: 0px;                                                            /* Positionnement vertical */
-  left: 0px;                                                           /* Positionnement horizontal */
-  width: 1330vh;                                                       /* Largeur de la bannière */
-  height: 650px;                                                       /* Hauteur de la bannière */
-  background-image: url('banniere/bannier2.png');                      /* Image de fond */
-  background-size: cover;                                              /* Couvre toute la zone */
-  background-position: center;                                         /* Centre l'image */
-  z-index: 1;                                                          /* Place la bannière au-dessus de l'arc */
+.banniere {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-image: url('banniere/bannier2.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
 }
 
 .arc {
-  position: absolute;
-  top: 500px;
-  left: 0px;
-  width: 1330vh;
-  height: 625px;
+  position: relative;
+  width: 100%;
+  height: 40vh;
   background-image: url('banniere/arc_de_cercle.png');
   background-size: cover;
   background-position: center;
@@ -50,178 +44,95 @@ p {
 }
 
 .fleur {
-  position: flex;
-  top: 300px;
-  left: 850px;
-  width: 480vh;
-  height: 460px;
-  opacity: 0.8;                                                        /* Transparence de l'image */
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  width: 25%;
+  height: auto;
+  opacity: 0.8;
   background-image: url('banniere/bannier_arc.png');
   background-size: cover;
   background-position: center;
   z-index: 3;
 }
 
-
-#nous {
-  position: absolute;
-  top: 700px;
-  left: 15%;
-  transform: translate(-50%);
-  width: 100px;
-  height: 160px;
-  background:  #63300e;                                              /* Fond du bouton */
-  opacity: 0.85;                                                        /* Transparence du bouton */
-  border-radius: 15px;                                                 /* Bords arrondis */
-  padding: 7px;                                                        /* Espacement intérieur */
-  z-index: 5;                                                          /* Place le conteneur au-dessus des autres éléments */
-  color: #ffffff;                                                    /* Couleur du texte */
-  font-size: 18px;                                                     /* Taille du texte */
-  border: none;                                                        /* Bordure du bouton */
-  }
-
-  #contenaire {
-  position: absolute;
-  top: 700px;
-  left: 32%;
-  transform: translate(-50%);
-  width: 100px;
-  height: 160px;
-  background:  #63300e;                                              /* Fond du bouton */
-  opacity: 0.85;                                                        /* Transparence du bouton */
-  border-radius: 15px;                                                 /* Bords arrondis */
-  padding: 7px;                                                        /* Espacement intérieur */
-  z-index: 5;                                                          /* Place le conteneur au-dessus des autres éléments */
-  color: #ffffff;                                                    /* Couleur du texte */
-  font-size: 18px;                                                     /* Taille du texte */
-  border: none;                                                        /* Bordure du bouton */
-  }
-
-   #transport {
-  position: absolute;
-  top: 700px;
-  left: 50%;
-  transform: translate(-50%);                                          /* Centre horizontalement */
-  width: 100px;
-  height: 160px;
-  background:  #63300e;                                              /* Fond du bouton */
-  opacity: 0.85;                                                        /* Transparence du bouton */
-  border-radius: 15px;                                                 /* Bords arrondis */
-  padding: 7px;                                                        /* Espacement intérieur */
-  z-index: 5;                                                          /* Place le conteneur au-dessus des autres éléments */
-  color: #ffffff;                                                    /* Couleur du texte */
-  font-size: 18px;                                                     /* Taille du texte */
-  border: none;                                                        /* Bordure du bouton */
-  }
-
-  #impex {
-  position: absolute;
-  top: 700px;
-  left: 67.5%;
-  transform: translate(-50%);                                          /* Centre horizontalement */
-  width: 100px;
-  height: 160px;
-  background:  #63300e;                                              /* Fond du bouton */
-  opacity: 0.85;                                                        /* Transparence du bouton */
-  border-radius: 15px;                                                 /* Bords arrondis */
-  padding: 7px;                                                        /* Espacement intérieur */
-  z-index: 5;                                                          /* Place le conteneur au-dessus des autres éléments */
-  color: #ffffff;                                                    /* Couleur du texte */
-  font-size: 18px;                                                     /* Taille du texte */
-  border: none;                                                        /* Bordure du bouton */
-  }
-
-   #contact {
-  position: absolute;
-  top: 700px;
-  left: 85%;
-  transform: translate(-50%);                                          /* Centre horizontalement */
-  width: 100px;
-  height: 160px;
-  background:  #63300e;                                              /* Fond du bouton */
-  opacity: 0.85;                                                        /* Transparence du bouton */
-  border-radius: 15px;                                                 /* Bords arrondis */
-  padding: 7px;                                                        /* Espacement intérieur */
-  z-index: 5;                                                          /* Place le conteneur au-dessus des autres éléments */
-  color: #ffffff;                                                    /* Couleur du texte */
-  font-size: 18px;                                                     /* Taille du texte */
-  border: none;                                                        /* Bordure du bouton */
-  }
-
 /* ================================
-   🧭 RESPONSIVE DESIGN
+   🔘 BOUTONS
    ================================ */
 
-/* Pour les écrans moyens (tablettes) */
+.bouton {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.bouton button {
+  background: #63300e;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 25px;
+  font-size: 18px;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bouton button:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ================================
+   📱 RESPONSIVE DESIGN
+   ================================ */
+
+/* Tablettes */
 @media (max-width: 1024px) {
-  .banniere, .arc {
-    width: 100%;
-    height: auto;
+  .banniere {
+    height: 50vh;
+  }
+
+  .arc {
+    height: 35vh;
   }
 
   .fleur {
-    width: 40%;
-    left: 55%;
-    top: 350px;
+    width: 35%;
+    right: 5%;
   }
 
-  /* Réduit la taille des boutons */
-  button,
-  #nous, #contenaire, #transport, #impex, #contact {
-    width: 80px;
-    height: 120px;
-    font-size: 14px;
-    top: 600px;
+  .bouton button {
+    font-size: 16px;
+    padding: 12px 20px;
   }
 }
 
-/* Pour les petits écrans (téléphones) */
-@media (max-width: 768px) {
-  body {
-    margin: 10px;
-    overflow-x: hidden;
-  }
-
-  .banniere, .arc {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  .fleur {
-    display: none; /* cache la fleur si elle gêne sur petit écran */
-  }
-
-  /* Réorganisation des boutons en colonne */
-  #nous, #contenaire, #transport, #impex, #contact {
-    position: static;   /* plus de position absolue */
-    display: block;
-    width: 90%;
-    height: auto;
-    margin: 10px auto;
-    font-size: 18px;
-  }
-
-  .bouton {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-}
-
+/* Téléphones */
 @media (max-width: 768px) {
   .banniere {
-    height: 30vh;
+    height: 35vh;
   }
 
   .arc {
     height: 25vh;
   }
 
+  .fleur {
+    display: none; /* Cache la fleur sur petit écran */
+  }
+
+  .bouton {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .bouton button {
-    font-size: 14px;
-    padding: 8px 15px;
+    width: 90%;
+    font-size: 18px;
+    padding: 14px 0;
   }
 }
 

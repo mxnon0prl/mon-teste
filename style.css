@@ -1,6 +1,4 @@
-/* ================================
-   🌐 STYLE GLOBAL
-   ================================ */
+/*STYLE GLOBAL*/
 
 body {
   background: #a1b7c4;
@@ -45,16 +43,15 @@ p {
 
 .fleur {
   position: absolute;
-  top: 30%;
-  right: 10%;
-  width: 25%;
+  top: 40%;
+  left: 65%;
+  width: 25vw; /* adapte la taille à la largeur de l’écran */
+  max-width: 300px;
   height: auto;
   opacity: 0.8;
-  background-image: url('banniere/bannier_arc.png');
-  background-size: cover;
-  background-position: center;
   z-index: 3;
 }
+
 
 /* ================================
    🔘 BOUTONS
@@ -135,5 +132,14 @@ p {
     padding: 14px 0;
   }
 }
+@media (max-width: 768px) {
+  .fleur {
+    left: 50%;
+    top: 45%;
+    width: 40vw;
+    max-width: 200px;
+  }
+}
+
 
 

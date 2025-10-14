@@ -22,7 +22,7 @@ body {
 .fleur {
   position: absolute;
   bottom: -60px; /* ajuste la hauteur de la fleur */
-  right: 10%; /* décalage depuis le bord droit */
+  right: 0%; /* décalage depuis le bord droit */
   width: 20vw; /* taille adaptative */
   max-width: 300px;
   height: auto;

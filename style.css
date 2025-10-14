@@ -1,118 +1,88 @@
-/* -----------------------------
-   Base du site
------------------------------ */
+/* 🌍 Style de base */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0d1b25;
-  color: white;
-  overflow-x: hidden;
+  background-color: #0e1e2a; /* Fond global foncé */
+  color: #ffffff;
+  overflow-x: hidden; /* évite les décalages horizontaux sur mobile */
 }
 
-/* -----------------------------
-   Bannière principale
------------------------------ */
+/* 🏞️ Bannière principale */
 .banniere {
+  position: relative;
   width: 100%;
-  height: 60vh;
+  height: 65vh; /* hauteur proportionnelle à l'écran */
   background-image: url('banniere/bannier2.png');
   background-size: cover;
   background-position: center;
-  position: relative;
   z-index: 1;
 }
 
-/* -----------------------------
-   Arc (sous la bannière)
------------------------------ */
-.arc {
-  width: 100%;
-  height: 40vh;
-  background-image: url('banniere/arc_de_cercle.png');
-  background-size: cover;
-  background-position: center;
+/* 🌸 Fleur décorative */
+.fleur {
+  position: absolute;
+  bottom: -60px; /* ajuste la hauteur de la fleur */
+  right: 10%; /* décalage depuis le bord droit */
+  width: 20vw; /* taille adaptative */
+  max-width: 300px;
+  height: auto;
+  opacity: 0.85;
   z-index: 2;
 }
 
-/* -----------------------------
-   Fleur (image normale)
------------------------------ */
-.fleur {
-  position: absolute;
-  top: 35%;
-  right: 10%;
-  width: 25vw;
-  max-width: 350px;
-  height: auto;
-  opacity: 0.8;
-  z-index: 3;
+/* 🌈 Arc décoratif */
+.arc {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  background-image: url('banniere/arc_de_cercle.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
 }
 
-/* -----------------------------
-   Boutons de navigation
------------------------------ */
-.boutons {
-  position: relative;
-  top: -60px;
+/* 🔘 Boutons du menu */
+.menu {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  z-index: 5;
+  flex-wrap: wrap; /* permet de passer sur 2 lignes sur téléphone */
+  gap: 20px;
+  margin-top: 30px;
+  padding-bottom: 40px;
 }
 
-.boutons button {
+.menu button {
   background: #63300e;
-  color: #ffffff;
+  color: white;
   font-size: 18px;
   border: none;
   border-radius: 15px;
-  padding: 12px 18px;
+  padding: 12px 20px;
   opacity: 0.85;
   cursor: pointer;
-  transition: transform 0.2s, background 0.2s;
+  transition: all 0.3s ease;
 }
 
-.boutons button:hover {
+.menu button:hover {
+  opacity: 1;
   transform: scale(1.05);
-  background: #80441a;
 }
 
-/* -----------------------------
-   Responsive Design
------------------------------ */
-@media (max-width: 1024px) {
-  .fleur {
-    width: 30vw;
-    right: 5%;
-    top: 40%;
-  }
-}
-
+/* 📱 Version mobile */
 @media (max-width: 768px) {
   .banniere {
-    height: 40vh;
-  }
-
-  .arc {
-    height: 30vh;
+    height: 45vh;
   }
 
   .fleur {
-    width: 40vw;
-    top: 45%;
-    right: 30%;
+    bottom: -30px;
+    right: 15%;
+    width: 35vw;
   }
 
-  .boutons {
-    top: 0;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .boutons button {
-    width: 70%;
+  .menu button {
     font-size: 16px;
+    padding: 10px 14px;
   }
 }
 

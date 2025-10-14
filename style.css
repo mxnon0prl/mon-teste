@@ -1,38 +1,31 @@
-/*STYLE GLOBAL*/
-
+/* -----------------------------
+   Base du site
+----------------------------- */
 body {
-  background: #a1b7c4;
-  font-family: Arial, sans-serif;
-  color: #feffff;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d1b25;
+  color: white;
   overflow-x: hidden;
 }
 
-h1 {
-  color: #ffffff;
-}
-
-p {
-  font-size: 18px;
-}
-
-/* ================================
-   🖼️ BANNIÈRES ET IMAGES
-   ================================ */
-
+/* -----------------------------
+   Bannière principale
+----------------------------- */
 .banniere {
-  position: relative;
   width: 100%;
   height: 60vh;
   background-image: url('banniere/bannier2.png');
   background-size: cover;
   background-position: center;
+  position: relative;
   z-index: 1;
 }
 
+/* -----------------------------
+   Arc (sous la bannière)
+----------------------------- */
 .arc {
-  position: relative;
   width: 100%;
   height: 40vh;
   background-image: url('banniere/arc_de_cercle.png');
@@ -41,108 +34,85 @@ p {
   z-index: 2;
 }
 
+/* -----------------------------
+   Fleur (image normale)
+----------------------------- */
 .fleur {
   position: absolute;
-  top: 40%;
-  left: 65%;
-  width: 25vw; /* adapte la taille à la largeur de l’écran */
-  max-width: 300px;
+  top: 35%;
+  right: 10%;
+  width: 25vw;
+  max-width: 350px;
   height: auto;
   opacity: 0.8;
   z-index: 3;
 }
 
-
-/* ================================
-   🔘 BOUTONS
-   ================================ */
-
+/* -----------------------------
+   Boutons de navigation
+----------------------------- */
 .boutons {
-  position: absolute;
-  top: 700px;             /* Ajuste selon ta bannière */
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  top: -60px;
   display: flex;
-  gap: 15px;              /* Espacement entre les boutons */
-  flex-wrap: wrap;        /* Permet de passer sur 2 lignes si trop étroit */
   justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
   z-index: 5;
 }
 
 .boutons button {
   background: #63300e;
-  color: white;
+  color: #ffffff;
   font-size: 18px;
   border: none;
   border-radius: 15px;
   padding: 12px 18px;
   opacity: 0.85;
-  transition: transform 0.2s;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
 }
 
 .boutons button:hover {
   transform: scale(1.05);
+  background: #80441a;
 }
 
-
-/* ================================
-   📱 RESPONSIVE DESIGN
-   ================================ */
-
-/* Tablettes */
+/* -----------------------------
+   Responsive Design
+----------------------------- */
 @media (max-width: 1024px) {
-  .banniere {
-    height: 50vh;
-  }
-
-  .arc {
-    height: 35vh;
-  }
-
   .fleur {
-    width: 35%;
+    width: 30vw;
     right: 5%;
-  }
-
-  .bouton button {
-    font-size: 16px;
-    padding: 12px 20px;
+    top: 40%;
   }
 }
 
-/* Téléphones */
 @media (max-width: 768px) {
   .banniere {
-    height: 35vh;
+    height: 40vh;
   }
 
   .arc {
-    height: 25vh;
+    height: 30vh;
   }
 
   .fleur {
-    display: none; /* Cache la fleur sur petit écran */
-  }
-}
-@media (max-width: 768px) {
-  .fleur {
-    left: 50%;
-    top: 45%;
     width: 40vw;
-    max-width: 200px;
+    top: 45%;
+    right: 30%;
   }
-}
 
-@media (max-width: 768px) {
   .boutons {
-    top: 60%; /* Les boutons descendent un peu sous la bannière */
-    flex-direction: column; /* S’empilent si pas de place */
-    gap: 10px;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
   }
 
   .boutons button {
-    font-size: 16px;
     width: 70%;
+    font-size: 16px;
   }
 }
 

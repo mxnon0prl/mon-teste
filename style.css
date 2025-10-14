@@ -29,7 +29,7 @@ p {
   position: absolute;                                                  /* Positionnement absolu */
   top: 0px;                                                            /* Positionnement vertical */
   left: 0px;                                                           /* Positionnement horizontal */
-  width: 1330px;                                                       /* Largeur de la bannière */
+  width: 1330vh;                                                       /* Largeur de la bannière */
   height: 650px;                                                       /* Hauteur de la bannière */
   background-image: url('banniere/bannier2.png');                      /* Image de fond */
   background-size: cover;                                              /* Couvre toute la zone */
@@ -41,7 +41,7 @@ p {
   position: absolute;
   top: 500px;
   left: 0px;
-  width: 1330px;
+  width: 1330vh;
   height: 625px;
   background-image: url('banniere/arc_de_cercle.png');
   background-size: cover;
@@ -50,10 +50,10 @@ p {
 }
 
 .fleur {
-  position: absolute;
+  position: flex;
   top: 300px;
   left: 850px;
-  width: 480px;
+  width: 480vh;
   height: 460px;
   opacity: 0.8;                                                        /* Transparence de l'image */
   background-image: url('banniere/bannier_arc.png');

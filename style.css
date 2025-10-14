@@ -210,3 +210,19 @@ p {
   }
 }
 
+@media (max-width: 768px) {
+  .banniere {
+    height: 30vh;
+  }
+
+  .arc {
+    height: 25vh;
+  }
+
+  .bouton button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+

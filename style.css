@@ -92,10 +92,12 @@ body {
 @media (max-width: 768px) {                                                    /* pour les mobiles */
   .banniere {
     height: 40vh;                                                              /* réduit la hauteur de la bannière */
+    background-size: cover;                                                     /* ajuste la taille de l'image de fond */
   }
 
   .arc {
     height: 30vh;                                                             /* réduit la hauteur de l’arc */
+     background-size: cover;                                                     /* ajuste la taille de l'image de fond */
   }
 
   .fleur {

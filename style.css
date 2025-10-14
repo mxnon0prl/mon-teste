@@ -21,7 +21,7 @@ body {
 /* 🌸 Fleur décorative */
 .fleur {
   position: absolute;
-  bottom: -60px; /* ajuste la hauteur de la fleur */
+  bottom: -20px; /* ajuste la hauteur de la fleur */
   right: 0%; /* décalage depuis le bord droit */
   width: 150vw; /* taille adaptative */
   max-width: 300px;
@@ -75,7 +75,7 @@ body {
   }
 
   .fleur {
-    bottom: 0px;
+    bottom: 20px;
     right: 15%;
     width: 150vw;
   }

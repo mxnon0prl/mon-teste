@@ -147,3 +147,66 @@ p {
   font-size: 18px;                                                     /* Taille du texte */
   border: none;                                                        /* Bordure du bouton */
   }
+
+/* ================================
+   🧭 RESPONSIVE DESIGN
+   ================================ */
+
+/* Pour les écrans moyens (tablettes) */
+@media (max-width: 1024px) {
+  .banniere, .arc {
+    width: 100%;
+    height: auto;
+  }
+
+  .fleur {
+    width: 40%;
+    left: 55%;
+    top: 350px;
+  }
+
+  /* Réduit la taille des boutons */
+  button,
+  #nous, #contenaire, #transport, #impex, #contact {
+    width: 80px;
+    height: 120px;
+    font-size: 14px;
+    top: 600px;
+  }
+}
+
+/* Pour les petits écrans (téléphones) */
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+    overflow-x: hidden;
+  }
+
+  .banniere, .arc {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .fleur {
+    display: none; /* cache la fleur si elle gêne sur petit écran */
+  }
+
+  /* Réorganisation des boutons en colonne */
+  #nous, #contenaire, #transport, #impex, #contact {
+    position: static;   /* plus de position absolue */
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    font-size: 18px;
+  }
+
+  .bouton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+}
+

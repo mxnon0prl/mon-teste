@@ -92,7 +92,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {                                                    /* pour les mobiles */
+@media (max-width: 768px) {
   .banniere {
     height: 45vh; /* un peu plus petite sur téléphone */
     background-size: contain; /* montre toute l’image */
@@ -103,8 +103,10 @@ body {
     background-size: contain;
   }
 }
- 
- .fleur {
+
+@media (max-width: 768px) {                                                    /* pour les mobiles */
+
+   .fleur {
     width: 40vw;                                                               /* adapte la taille à la largeur de l’écran */
     top: 45%;                                                                  /* ajuste la position verticale */
     right: 0%;                                                                /* ajuste la position à droite */

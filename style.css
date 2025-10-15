@@ -101,12 +101,15 @@ body {
   }
 
 @media (max-width: 768px) {                                                    /* pour les mobiles */
- .arc {
-    height: 45vh;
+  .arc {
+    position: relative;      /* nécessaire pour que top fonctionne */
+    height: 45vh;            /* ajuste la taille si besoin */
     background-size: contain;
-    top: 10vh;
-     transform: translateY(20%);
+    top: 5vh;                /* décalage vertical sous la bannière */
+    transform: none;         /* supprime la translation précédente */
   }
+}
+
 }
    .fleur {
     width: 40vw;                                                               /* adapte la taille à la largeur de l’écran */

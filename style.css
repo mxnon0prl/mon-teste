@@ -86,7 +86,7 @@ body {
 ----------------------------- */
 @media (max-width: 1024px) {                                                   /* pour les tablettes et petits écrans */
   .fleur {
-    width: 30vw;                                                               /* adapte la taille à la largeur de l’écran */
+    width: 60vw;                                                               /* adapte la taille à la largeur de l’écran */
     right: 5%;                                                                 /* ajuste la position à droite */
     top: 40%;                                                                  /* ajuste la position verticale */ 
   }
@@ -107,7 +107,7 @@ body {
 @media (max-width: 768px) {                                                    /* pour les mobiles */
 
   .fleur {
-    width: 40vw;                                                               /* adapte la taille à la largeur de l’écran */
+    width: 60vw;                                                               /* adapte la taille à la largeur de l’écran */
     top: 45%;                                                                  /* ajuste la position verticale */
     right: 0%;                                                                /* ajuste la position à droite */
   }
@@ -119,26 +119,9 @@ body {
   }
 
   .boutons button {
-    width: 70%;                                                                /* boutons plus larges */
+    width: 50%;                                                                /* boutons plus larges */
     font-size: 16px;                                                           /* taille de la police réduite */
   } 
-}
-
-/* 🌍 Style général (PC & grand écran) */
-.menu button {
-  background: #63300e;
-  color: white;
-  font-size: 18px;
-  border: none;
-  border-radius: 15px;
-  padding: 12px 20px;
-  opacity: 0.85;
-  transition: all 0.3s ease;
-}
-
-.menu button:hover {
-  opacity: 1;
-  transform: scale(1.05);
 }
 
 /* 📱 Style mobile uniquement */

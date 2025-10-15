@@ -103,7 +103,8 @@ body {
   .arc {
     height: 35vh;
     background-size: contain;
-    top: 45%;
+    top: 0%;
+    background-position: top;
   }
 }
 

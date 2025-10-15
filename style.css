@@ -94,16 +94,14 @@ body {
 
 @media (max-width: 768px) {
   .banniere {
-    height: 45vh; /* un peu plus petite sur téléphone */
+    height: 0vh; /* un peu plus petite sur téléphone */
     background-size: contain; /* montre toute l’image */
-     height: 60vh; /* hauteur adaptable */
      top: 0%;
   }
 
   .arc {
     height: 35vh;
     background-size: contain;
-     height: 60vh; /* hauteur adaptable */
      top: 0%;
   }
 }

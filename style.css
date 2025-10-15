@@ -13,26 +13,25 @@ body {
    Bannière principale
 ----------------------------- */
 .banniere {
-  width: 100%;
-  height: 60vh; /* hauteur adaptable */
-  background-image: url('banniere/bannier2.png');
-  background-size: cover; /* couvre toute la largeur */
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
+  width: 100%;                                                                  /* prend toute la largeur de l’écran */
+  height: 60vh;                                                                 /* hauteur relative à la hauteur de la fenêtre */
+  background-image: url('banniere/bannier2.png');                               /* image de fond */
+  background-size: cover;                                                       /* couvre toute la zone */
+  background-position: center;                                                  /* centre l’image */
+  position: relative;                                                           /* positionnement relatif pour superposer d’autres éléments */
+  z-index: 1;                                                                   /* position de base pour la superposition */
 }
+
 /* -----------------------------
    Arc (sous la bannière)
 ----------------------------- */
 .arc {
-  width: 100%;
-  height: 40vh;
-  background-image: url('banniere/arc_de_cercle.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
+  width: 100%;                                                                  /* prend toute la largeur de l’écran */
+  height: 70vh;                                                                 /* hauteur relative à la hauteur de la fenêtre */
+  background-image: url('banniere/arc_de_cercle.png');                          /* image de fond */
+  background-size: cover;                                                       /* couvre toute la zone */
+  background-position: center;                                                  /* centre l’image */
+  z-index: 2;                                                                   /* superposé au-dessus de la bannière */
 }
 
 /* -----------------------------
@@ -86,42 +85,25 @@ body {
 ----------------------------- */
 @media (max-width: 1024px) {                                                   /* pour les tablettes et petits écrans */
   .fleur {
-    width: 60vw;                                                               /* adapte la taille à la largeur de l’écran */
+    width: 30vw;                                                               /* adapte la taille à la largeur de l’écran */
     right: 5%;                                                                 /* ajuste la position à droite */
     top: 40%;                                                                  /* ajuste la position verticale */ 
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {                                                    /* pour les mobiles */
   .banniere {
-    height: 45vh;
-    margin-top: 0;
-    position: fixed; /* reste en haut de l'écran */
-    top: 0;
-    left: 0;
+    height: 40vh;                                                              /* réduit la hauteur de la bannière */
+    background-size: cover;                                                     /* ajuste la taille de l'image de fond */
   }
 
   .arc {
-   margin-top: 45vh; /* positionne l’arc juste sous la bannière */
-    height: 35vh;
-  }
-}
-
-@media (max-width: 768px) {                                    /* pour les mobiles */
-   
-  .banniere {
-    height: 45vh; /* un peu plus petite sur téléphone */
-    background-size: contain; /* montre toute l’image */
-    width: 100%;
+    height: 30vh;                                                             /* réduit la hauteur de l’arc */
+    background-size: cover;                                                     /* ajuste la taille de l'image de fond */
   }
 
-  .arc {
-    height: 45vh;
-    background-size: contain;
-  }
-} 
   .fleur {
-    width: 60vw;                                                               /* adapte la taille à la largeur de l’écran */
+    width: 40vw;                                                               /* adapte la taille à la largeur de l’écran */
     top: 45%;                                                                  /* ajuste la position verticale */
     right: 0%;                                                                /* ajuste la position à droite */
   }
@@ -133,25 +115,11 @@ body {
   }
 
   .boutons button {
-    width: 50%;                                                                /* boutons plus larges */
-    font-size: 16px;                                                           /* taille de la police réduite */
+    width: 70%;                                                                /* boutons plus larges */
+    font-size: 16px;                                                          /* taille de la police réduite */
   } 
 }
 
-/* 📱 Style mobile uniquement */
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column; /* les boutons s'empilent */
-    align-items: center;
-    gap: 10px;
-  }
-
-  .menu button {
-    width: 70%; /* plus large sur mobile */
-    font-size: 16px; /* un peu plus petit */
-    padding: 10px 14px;
-  }
-}
 
 
 

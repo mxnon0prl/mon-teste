@@ -105,7 +105,7 @@ body {
     position: relative;      /* nécessaire pour que top fonctionne */
     height: 45vh;            /* ajuste la taille si besoin */
     background-size: contain;
-    top: 500vh;                /* décalage vertical sous la bannière */
+    top: 50vh;                /* décalage vertical sous la bannière */
     transform: none;         /* supprime la translation précédente */
   }
 }

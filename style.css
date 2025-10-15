@@ -116,7 +116,7 @@ body {
 
   .boutons button {
     width: 70%;                                                                /* boutons plus larges */
-    font-size: 16px;                                                          /* taille de la police réduite */
+    font-size: 16px;                                                           /* taille de la police réduite */
   } 
 }
 

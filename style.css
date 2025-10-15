@@ -120,6 +120,39 @@ body {
   } 
 }
 
+/* 🌍 Style général (PC & grand écran) */
+.menu button {
+  background: #63300e;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 20px;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.menu button:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* 📱 Style mobile uniquement */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* les boutons s'empilent */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu button {
+    width: 70%; /* plus large sur mobile */
+    font-size: 16px; /* un peu plus petit */
+    padding: 10px 14px;
+  }
+}
+
+
 
 
 

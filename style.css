@@ -105,7 +105,7 @@ body {
     height: 45vh;
     background-size: contain;
     top: 10vh;
-     transform: translateY(50%);
+     transform: translateY(0%);
   }
 }
    .fleur {

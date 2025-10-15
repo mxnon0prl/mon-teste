@@ -13,27 +13,28 @@ body {
    Bannière principale
 ----------------------------- */
 .banniere {
-  width: 100%;                                                                  /* prend toute la largeur de l’écran */
-  height: 60vh;                                                                 /* hauteur relative à la hauteur de la fenêtre */
-  background-image: url('banniere/bannier2.png');                               /* image de fond */
-  background-size: cover;                                                       /* couvre toute la zone */
-  background-position: center;                                                  /* centre l’image */
-  position: relative;                                                           /* positionnement relatif pour superposer d’autres éléments */
-  z-index: 1;                                                                   /* position de base pour la superposition */
+  width: 100%;
+  height: 60vh; /* hauteur adaptable */
+  background-image: url('banniere/bannier2.png');
+  background-size: cover; /* couvre toute la largeur */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
 }
 
 /* -----------------------------
    Arc (sous la bannière)
 ----------------------------- */
 .arc {
-  width: 100%;                                                                  /* prend toute la largeur de l’écran */
-  height: 70vh;                                                                 /* hauteur relative à la hauteur de la fenêtre */
-  background-image: url('banniere/arc_de_cercle.png');                          /* image de fond */
-  background-size: cover;                                                       /* couvre toute la zone */
-  background-position: center;                                                  /* centre l’image */
-  z-index: 2;                                                                   /* superposé au-dessus de la bannière */
+  width: 100%;
+  height: 40vh;
+  background-image: url('banniere/arc_de_cercle.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
-
 /* -----------------------------
    Fleur (image normale)
 ----------------------------- */
@@ -93,16 +94,17 @@ body {
 
 @media (max-width: 768px) {                                                    /* pour les mobiles */
   .banniere {
-    height: 40vh;                                                              /* réduit la hauteur de la bannière */
-    background-size: cover;                                                     /* ajuste la taille de l'image de fond */
+    height: 45vh; /* un peu plus petite sur téléphone */
+    background-size: contain; /* montre toute l’image */
   }
 
   .arc {
-    height: 30vh;                                                             /* réduit la hauteur de l’arc */
-    background-size: cover;                                                     /* ajuste la taille de l'image de fond */
+    height: 35vh;
+    background-size: contain;
   }
-
-  .fleur {
+}
+ 
+ .fleur {
     width: 40vw;                                                               /* adapte la taille à la largeur de l’écran */
     top: 45%;                                                                  /* ajuste la position verticale */
     right: 0%;                                                                /* ajuste la position à droite */

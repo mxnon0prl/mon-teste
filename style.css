@@ -99,15 +99,14 @@ body {
      top: 0%;
      background-position: top;
   }
+
+@media (max-width: 768px) {                                                    /* pour les mobiles */
  .arc {
     height: 35vh;
     background-size: contain;
     top: 10vh;
   }
 }
-
-@media (max-width: 768px) {                                                    /* pour les mobiles */
-
    .fleur {
     width: 40vw;                                                               /* adapte la taille à la largeur de l’écran */
     top: 45%;                                                                  /* ajuste la position verticale */

@@ -96,6 +96,7 @@ body {
   .banniere {
     height: 45vh; /* un peu plus petite sur téléphone */
     background-size: contain; /* montre toute l’image */
+    top: 0%
   }
 
   .arc {

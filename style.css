@@ -96,11 +96,13 @@ body {
   .banniere {
     height: 45vh; /* un peu plus petite sur téléphone */
     background-size: contain; /* montre toute l’image */
+     height: 60vh; /* hauteur adaptable */
   }
 
   .arc {
     height: 35vh;
     background-size: contain;
+     height: 60vh; /* hauteur adaptable */
   }
 }
 

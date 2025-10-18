@@ -98,6 +98,7 @@ body {
     background-size: contain; /* montre toute l’image */
      top: 0%;
      background-position: top;
+     z-index: 1;
   }
 
 @media (max-width: 768px) {                                                    /* pour les mobiles */
@@ -107,6 +108,7 @@ body {
     background-size: contain;
     top: -30vh;                /* décalage vertical sous la bannière */
     transform: none;         /* supprime la translation précédente */
+     z-index: 2;
   }
 }
 
@@ -115,6 +117,7 @@ body {
     width: 40vw;                                                               /* adapte la taille à la largeur de l’écran */
     top: 45%;                                                                  /* ajuste la position verticale */
     right: 0%;                                                                /* ajuste la position à droite */
+     z-index: 3;
   }
 
   .boutons {

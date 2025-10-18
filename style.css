@@ -115,7 +115,7 @@ body {
 }
    .fleur {
     width: 40vw;                                                               /* adapte la taille à la largeur de l’écran */
-    top: 45%;                                                                  /* ajuste la position verticale */
+    top: 70%;                                                                  /* ajuste la position verticale */
     right: 0%;                                                                /* ajuste la position à droite */
      z-index: 3;
   }

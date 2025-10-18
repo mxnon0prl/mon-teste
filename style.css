@@ -106,16 +106,16 @@ body {
   .arc {
     height: 45vh;
     background-size: contain;
-    top: -100vh;
+    top: 90vh;
     margin-top: -5vh;
   }
 
   .fleur {
     position: relative;
-    width: 60%;
+    width: 45%;
     top: -60vh;
     right: 0;
-    left: 0%;
+    left: 100%;
     transform: translateX(-50%);
     margin-top: 10px;
   }

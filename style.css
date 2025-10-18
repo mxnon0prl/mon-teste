@@ -118,9 +118,9 @@ body {
   .fleur {
     position: relative;
     width: 45%;
-    top: 0vh;
+    top: -20vh;
     right: 0;
-    left: 120%;
+    left: 100%;
     transform: translateX(-50%);
     margin-top: 10px;
   }

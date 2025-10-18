@@ -121,13 +121,13 @@ body {
   }
 
   .boutons {
-    top: 0;                                                                    /* ajuste la position des boutons */
+    top: -40;                                                                    /* ajuste la position des boutons */
     flex-direction: column;                                                    /* empile les boutons verticalement */
     align-items: center;                                                       /* centre les boutons */
   }
 
   .boutons button {
-    width: 70%;                                                                /* boutons plus larges */
+    width: 40%;                                                                /* boutons plus larges */
     font-size: 16px;                                                          /* taille de la police réduite */
   } 
 }

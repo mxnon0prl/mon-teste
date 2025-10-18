@@ -118,16 +118,16 @@ body {
   .fleur {
     position: relative;
     width: 45%;
-    top: -80vh;
+    top: -75vh;
     right: 0;
-    left: 90%;
+    left: 150%;
     transform: translateX(-50%);
     margin-top: 10px;
   }
 
   .boutons {
     position: relative;
-    top: -150vh;
+    top: -50vh;
     flex-direction: column;
     align-items: center;
     gap: 20px;

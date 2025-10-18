@@ -2,11 +2,11 @@
    Base du site
 ----------------------------- */
 body {
-  margin: 0;                                                                    /* supprime les marges par défaut */
-  font-family: Arial, sans-serif;                                               /* police de caractères */
-  background-color: #a1b7c4;                                                  /* couleur de fond sombre */
-  color: white;                                                               /* couleur du texte */
-  overflow-x: hidden;                                                           /* empêche le défilement horizontal */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #a1b7c4;
+  color: white;
+  overflow-x: hidden;
 }
 
 /* -----------------------------
@@ -14,9 +14,9 @@ body {
 ----------------------------- */
 .banniere {
   width: 100%;
-  height: 60vh; /* hauteur adaptable */
+  height: 60vh;
   background-image: url('banniere/bannier2.png');
-  background-size: cover; /* couvre toute la largeur */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -35,100 +35,106 @@ body {
   background-repeat: no-repeat;
   z-index: 1;
 }
+
 /* -----------------------------
-   Fleur (image normale)
+   Fleur
 ----------------------------- */
 .fleur {
-  position: absolute;                                                           /* positionnement absolu pour superposer l’image */
-  top: 35%;                                                                     /* positionne l’image vers le milieu verticalement */
-  right: 0%;                                                                    /* positionne l’image à droite */
-  width: 150vw;                                                                 /* adapte la taille à la largeur de l’écran */
-  max-width: 500px;                                                             /* taille maximale pour les grands écrans */
-  height: auto;                                                                 /* hauteur automatique pour garder les proportions */
-  opacity: 0.8;                                                                 /* légère transparence */
-  z-index: 3;                                                                   /* superposé au-dessus de la bannière et de l’arc */
+  position: absolute;
+  top: 35%;
+  right: 0%;
+  width: 150vw;
+  max-width: 500px;
+  height: auto;
+  opacity: 0.8;
+  z-index: 3;
 }
 
 /* -----------------------------
    Boutons de navigation
 ----------------------------- */
 .boutons {
-  position: relative;                                                           /* positionnement relatif pour superposer les boutons */
-  top: -430px;                                                                  /* remonte les boutons au-dessus de l’arc */
-  display: flex;                                                                /* utilise Flexbox pour l’alignement */
-  justify-content: center;                                                      /* centre les boutons horizontalement */
-  gap: 100px;                                                                    /* espace entre les boutons */
-  flex-wrap: wrap;                                                              /* permet aux boutons de passer à la ligne si nécessaire */
-  z-index: 5;                                                                   /* superposé au-dessus de tous les autres éléments */
+  position: relative;
+  top: -430px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  z-index: 5;
 }
 
 .boutons button {
-  background: #63300e;                                                        /* couleur de fond marron */
-  color: #ffffff;                                                             /* couleur du texte blanche */
-  width: 120px;                                                                 /* largeur fixe */
-  height: 210px;                                                                /* hauteur fixe */
-  font-size: 18px;                                                              /* taille de la police */
-  border: none;                                                                 /* pas de bordure */
-  border-radius: 15px;                                                          /* bords arrondis */
-  padding: 12px 18px;                                                           /* espace intérieur */
-  opacity: 0.85;                                                                /* légère transparence */
-  cursor: pointer;                                                              /* curseur pointeur au survol */
-  transition: transform 0.2s, background 0.2s;                                  /* animation de transition */
+  background: #63300e;
+  color: #ffffff;
+  width: 120px;
+  height: 210px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 18px;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
 }
 
 .boutons button:hover {
-  transform: scale(1.05);                                                       /* effet de zoom au survol */
-  background: #80441a;                                                        /* couleur de fond plus claire au survol */
+  transform: scale(1.05);
+  background: #80441a;
 }
 
 /* -----------------------------
    Responsive Design
 ----------------------------- */
-@media (max-width: 1024px) {                                                   /* pour les tablettes et petits écrans */
+
+/* Tablettes */
+@media (max-width: 1024px) {
   .fleur {
-    width: 30vw;                                                               /* adapte la taille à la largeur de l’écran */
-    right: 5%;                                                                 /* ajuste la position à droite */
-    top: 40%;                                                                  /* ajuste la position verticale */ 
+    width: 30vw;
+    right: 5%;
+    top: 40%;
   }
 }
 
+/* Mobiles */
 @media (max-width: 768px) {
   .banniere {
-    height: 45vh; /* un peu plus petite sur téléphone */
-    background-size: contain; /* montre toute l’image */
-     top: 0%;
-     background-position: top;
-  }
-
-@media (max-width: 768px) {                                                    /* pour les mobiles */
-  .arc {
-    position: relative;      /* nécessaire pour que top fonctionne */
-    height: 45vh;            /* ajuste la taille si besoin */
+    height: 45vh;
     background-size: contain;
-    top: -35vh;                /* décalage vertical sous la bannière */
-    transform: none;         /* supprime la translation précédente */
+    background-position: top;
   }
-}
 
-}
-   .fleur {
-    width: 100vw;                                                               /* adapte la taille à la largeur de l’écran */
-    top: -35vh;                                                                  /* ajuste la position verticale */
-    right: 0%;                                                                /* ajuste la position à droite */
+  .arc {
+    height: 45vh;
+    background-size: contain;
+    margin-top: -5vh;
+  }
+
+  .fleur {
+    position: relative;
+    width: 60%;
+    top: 0;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
   }
 
   .boutons {
-    top: -40;                                                                    /* ajuste la position des boutons */
-    flex-direction: column;                                                    /* empile les boutons verticalement */
-    align-items: center;                                                       /* centre les boutons */
+    position: relative;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
   }
 
   .boutons button {
-    width: 80%;                                                                /* boutons plus larges */
-    height: 70%; 
-    font-size: 16px;                                                          /* taille de la police réduite */
-  } 
+    width: 70%;
+    height: auto;
+    font-size: 16px;
+  }
 }
+
 
 
 

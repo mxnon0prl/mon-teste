@@ -98,7 +98,6 @@ body {
     background-size: contain; /* montre toute l’image */
      top: 0%;
      background-position: top;
-     z-index: 2;
   }
 
 @media (max-width: 768px) {                                                    /* pour les mobiles */
@@ -108,16 +107,14 @@ body {
     background-size: contain;
     top: -35vh;                /* décalage vertical sous la bannière */
     transform: none;         /* supprime la translation précédente */
-     z-index: 3;
   }
 }
 
 }
    .fleur {
-    width: 50vw;                                                               /* adapte la taille à la largeur de l’écran */
+    width: 100vw;                                                               /* adapte la taille à la largeur de l’écran */
     top: -35vh;                                                                  /* ajuste la position verticale */
     right: 0%;                                                                /* ajuste la position à droite */
-     z-index: 1;
   }
 
   .boutons {
@@ -128,7 +125,7 @@ body {
 
   .boutons button {
     width: 80%;                                                                /* boutons plus larges */
-    height: 50%; 
+    height: 70%; 
     font-size: 16px;                                                          /* taille de la police réduite */
   } 
 }

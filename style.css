@@ -1,3 +1,8 @@
+html {
+  color-scheme: light; /* désactive les ajustements automatiques */
+  forced-color-adjust: none; /* bloque les changements forcés */
+}
+
 /* -----------------------------
    Base du site
 ----------------------------- */
@@ -7,11 +12,6 @@ body {
   background-color: #a1b7c4;
   color: white;
   overflow-x: hidden;
-}
-
-html {
-  color-scheme: light; /* désactive les ajustements automatiques */
-  forced-color-adjust: none; /* bloque les changements forcés */
 }
 
 /* -----------------------------

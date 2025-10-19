@@ -1,5 +1,5 @@
 html {
-  color-scheme: dark; /* désactive les ajustements automatiques */
+  color-scheme: light; /* désactive les ajustements automatiques */
   forced-color-adjust: none; /* bloque les changements forcés */
 }
 
@@ -141,8 +141,8 @@ body {
   }
 
   .boutons button {
-    width: 5vh;
-    height: 10vh;
+    width: 1vh;
+    height: 3vh;
     font-size: 16px;
 
   }

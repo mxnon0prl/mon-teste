@@ -9,6 +9,14 @@ body {
   overflow-x: hidden;
 }
 
+html, body {
+  color-scheme: light;
+  forced-color-adjust: none;
+  background-color: #a1b7c4; /* ta couleur de fond claire */
+  color: #ffffff; /* ton texte clair */
+}
+
+
 /* -----------------------------
    Bannière principale
 ----------------------------- */

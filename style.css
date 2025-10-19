@@ -126,10 +126,10 @@ html, body {
 
   .fleur {
     position: relative;
-    width: 40%;
+    width: 43%;
     top: -73vh;
     right: 0;
-    left: 78%;
+    left: 80%;
     transform: translateX(-50%);
     margin-top: 10px;
   }

@@ -149,7 +149,7 @@ body {
   .fond {
     position: relative;          /* permet à top/left de fonctionner */
     top: -40px;                  /* décale l'arc vers le haut */
-    width: 100%;
+    width: 50%;
     height: 40vh;
     background-image: url('banniere/fondsite.png');
     background-size: cover;

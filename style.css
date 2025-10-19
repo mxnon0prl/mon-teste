@@ -141,11 +141,21 @@ body {
   }
 
   .boutons button {
-    width: 30vh;
-    height: 50vh;
+    width: 15vh;
+    height: 25vh;
     font-size: 16px;
 
   }
+  .fond {
+    position: relative;          /* permet à top/left de fonctionner */
+    top: 0px;                  /* décale l'arc vers le haut */
+    width: 100%;
+    height: 40vh;
+    background-image: url('banniere/fondsite.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     }
 }
 
 

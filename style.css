@@ -1,5 +1,5 @@
 html {
-  color-scheme: light; /* désactive les ajustements automatiques */
+  color-scheme: dark; /* désactive les ajustements automatiques */
   forced-color-adjust: none; /* bloque les changements forcés */
 }
 

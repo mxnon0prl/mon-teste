@@ -133,7 +133,7 @@ body {
 
   .boutons {
     position: relative;
-    top: -75vh;
+    top: -78vh;
     align-items: center;
     gap: 20px;
     margin-top: 20px;
@@ -142,7 +142,7 @@ body {
   .boutons button {
     width: 7vh;
     height: 12vh;
-    font-size: 7px;
+    font-size: 10px;
   }
 }
 

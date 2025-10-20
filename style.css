@@ -1,6 +1,10 @@
-html {
-  color-scheme: light; /* désactive les ajustements automatiques */
-  forced-color-adjust: none; /* bloque les changements forcés */
+/* --------- Forcer le mode clair --------- */
+html, body {
+  background-color: #a1b7c4 !important; /* ton fond clair */
+  color: white !important;               /* texte par défaut */
+  color-scheme: light;                   /* indique qu’on veut le thème clair */
+  forced-color-adjust: none !important;  /* empêche le mode sombre automatique */
+  -webkit-text-size-adjust: 100%;        /* corrige Safari mobile */
 }
 
 /* -----------------------------

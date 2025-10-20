@@ -137,6 +137,7 @@ body {
 
   .boutons {
     position: relative;
+    align-items: flex-end;     /* texte en bas du bouton */
     top: -78vh;
     align-items: center;
     gap: 20px;
@@ -147,7 +148,6 @@ body {
     width: 7vh;
     height: 12vh;
     font-size: 11px;
-    align-items: flex-end;     /* texte en bas du bouton */
   }
 }
 

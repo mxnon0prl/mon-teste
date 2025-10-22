@@ -148,7 +148,7 @@ body {
     .boutons button {
   display: flex;                 /* permet d'aligner le contenu facilement */
   justify-content: center;       /* centre horizontalement */
-  align-items: up;           /* centre verticalement */
+  align-items: flex-end;           /* centre verticalement */
   text-align: center;            /* centre le texte à l'intérieur */
   line-height: normal;           /* évite le décalage du texte */
 

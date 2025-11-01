@@ -150,7 +150,7 @@ html, body {
   /* Boutons */
   .boutons {
     position: relative;
-    top: -90vh;
+    top: -80vh;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -175,12 +175,10 @@ html, body {
   }
 
   .btn-icon {
-    width: 9vh;
-    height: 12vh;
+    width: 12vh;
+    height: 15vh;
   }
 }
-
-
 
 
 /* PC très grands écrans */

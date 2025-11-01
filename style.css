@@ -137,10 +137,16 @@ html, body {
   .iconesb {
     gap: 130px;
   }
+
+  .boutons {
+    gap: 60px;
+  }
 }
 
 /* Mobiles */
 @media (max-width: 768px) {
+
+  /* Bannière et arc */
   .banniere {
     height: 45vh;
     background-size: contain;
@@ -174,20 +180,24 @@ html, body {
     gap: 20px;
   }
 
+  /* Boutons */
   .boutons {
     position: relative;
     top: -78vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     margin-top: 20px;
   }
 
   .boutons button {
-    width: 7vh;
-    height: 12vh;
-    font-size: 10px;
-    border-radius: 15px;
-    padding: 8px;
+    width: 90px;
+    height: 120px;
+    font-size: 12px;
+    border-radius: 12px;
+    padding: 5px;
     gap: 5px;
   }
 

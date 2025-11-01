@@ -169,8 +169,8 @@ body {
 
   .iconesb {
     position: relative;                                                /* permet à top de fonctionner */
-    top: -85vh;                                                        /* décale les icônes vers le haut */
-    gap: 100px;                                                        /* réduit l'espace entre les icônes */
+    top: 0vh;                                                        /* décale les icônes vers le haut */
+    gap: 20px;                                                        /* réduit l'espace entre les icônes */
   }
 
   .iconesb img {

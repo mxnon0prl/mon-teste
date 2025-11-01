@@ -77,7 +77,7 @@ body {
 }
 
 .iconesb img {
-  width: 90px;                                                        /* largeur des icônes */;
+  width: 90px;                                                        /* largeur des icônes */
   height: auto;                                                       /* hauteur automatique pour conserver les proportions */
   cursor: pointer;                                                    /* curseur en main au survol */
   transition: transform 0.2s;                                         /* transition pour l'effet au survol */

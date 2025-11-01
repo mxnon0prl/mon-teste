@@ -180,8 +180,8 @@ html, body {
   transition: transform 0.2s, background 0.2s;                        /* transitions pour les effets au survol */
 }
   .btn-icon {
-    width: 35px;
-    height: 35px;
+    width: 7vh;
+    height: 12vh;
   }
 }
 

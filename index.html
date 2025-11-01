@@ -1,38 +1,19 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta name="color-scheme" content="light">
-<meta name="supported-color-schemes" content="light">
-<meta name="theme-color" content="#a1b7c4">
-
-<style>
-  html, body {
-    background-color: #a1b7c4 !important;
-    color: white !important;
-    forced-color-adjust: none !important;
-    -webkit-text-size-adjust: 100%;
-    overscroll-behavior: none;
-  }
-
-  /* Pour bloquer Safari iOS mode sombre intelligent */
-  @media (prefers-color-scheme: dark) {
-    html, body {
-      background-color: #a1b7c4 !important;
-      color: white !important;
-      forced-color-adjust: none !important;
-    }
-  }
-  </style>
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Empêche le mode sombre automatique -->
+  <meta name="color-scheme" content="light only">
+  <meta name="theme-color" content="#a1b7c4">
+  <meta name="supported-color-schemes" content="light">
   <title>Kubybear</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color:#a1b7c4 !important; color:white;">
-
+<body>
   <div class="banniere"></div>
   <div class="arc"></div>
-  <img class="fleur" src="banniere/bannier_arc.png" alt="Décoration fleur">
-
+  <img class="fleur" src="banniere/bannier_arc.png" alt="Décoration fleur">>
   <div class="boutons">
     <button id="nous">Qui sommes-nous</button>
     <button id="contenaire">Container</button>
@@ -40,7 +21,5 @@
     <button id="impex">Impex</button>
     <button id="contact">Contact</button>
   </div>
-
 </body>
 </html>
-

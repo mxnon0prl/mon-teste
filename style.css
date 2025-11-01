@@ -143,8 +143,8 @@ body {
   /* === Spécial mobile === */
   .boutons button {
     flex-direction: row; /* texte à côté, pas en colonne */
-    width: 70px;
-    height: 100px;
+    width: 50px;
+    height: 65px;
     font-size: 12px;
     border-radius: 12px;
     padding: 5px;

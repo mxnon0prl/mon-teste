@@ -72,7 +72,7 @@ body {
   top: -725px;                                                         /* décale les boutons vers le haut */
   display: flex;                                                       /* utilise Flexbox pour l'alignement */
   justify-content: center;                                             /* centre les boutons horizontalement */
-  gap: 170px;                                                          /* espace entre les boutons */
+  gap: 20px;                                                          /* espace entre les boutons */
   z-index: 6;                                                          /* place l'icône au-dessus de l'arc */
 }
 

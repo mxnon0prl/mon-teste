@@ -150,7 +150,7 @@ html, body {
   /* Boutons */
   .boutons {
     position: relative;
-    top: -95vh;
+    top: -115vh;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

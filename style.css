@@ -60,7 +60,7 @@ html, body {
 ----------------------------- */
 .boutons {
   position: relative;
-  top: -750px;
+  top: -725px;
   display: flex;
   justify-content: center;
   gap: 100px;

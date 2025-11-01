@@ -1,18 +1,14 @@
 /* === Forcer le mode clair sur tous les appareils === */
 :root {
-  color-scheme: light;
-  color-scheme: only light !important; /* indique au navigateur de rester en clair */
+  color-scheme: light;                                                /* indique au navigateur de rester en clair */
 }
 
-/* Désactive le mode sombre automatique sur tous les navigateurs */
-html, body {
-  background-color: #a1b7c4 !important; /* ta couleur claire */
-  color: #ffffff !important; /* texte blanc */
-  forced-color-adjust: none !important; /* empêche le mode sombre automatique */
-  background-color: #a1b7c4 !important; /* ton fond clair */
-  color: #ffffff !important; /* couleur du texte */
-  forced-color-adjust: none !important; /* empêche l’inversion automatique des couleurs */
-  -webkit-text-size-adjust: 100%;
+html, body {                                                          /* applique le style à toute la page */
+  background-color: #a1b7c4 !important;                             /* ta couleur de fond claire */
+  color: #ffffff !important;                                        /* couleur du texte */
+  forced-color-adjust: none !important;                               /* bloque le mode sombre automatique */
+  -webkit-text-size-adjust: 100%;                                     /* empêche le zoom automatique sur iOS */
+
 }
 
 /* -----------------------------
@@ -59,7 +55,7 @@ body {
 ----------------------------- */
 .fleur {
   position: absolute;                                                  /* permet à top/right de fonctionner */
-  top: 50%;                                                            /* décale la fleur vers le bas */
+  top: 55%;                                                            /* décale la fleur vers le bas */
   right: 0%;                                                           /* aligne la fleur à droite */
   width: 180vw;                                                        /* largeur de la fleur */
   max-width: 500px;                                                    /* largeur maximale */
@@ -69,11 +65,30 @@ body {
 }
 
 /* -----------------------------
+   icones
+----------------------------- */
+.iconesb {
+  position: relative;                                                  /* permet à top de fonctionner */
+  top: -725px;                                                         /* décale les boutons vers le haut */
+  display: flex;                                                       /* utilise Flexbox pour l'alignement */
+  justify-content: center;                                             /* centre les boutons horizontalement */
+  gap: 170px;                                                          /* espace entre les boutons */
+  z-index: 6;                                                          /* place l'icône au-dessus de l'arc */
+}
+
+.iconesb img {
+  width: 90px;                                                        /* largeur des icônes */;
+  height: auto;                                                       /* hauteur automatique pour conserver les proportions */
+  cursor: pointer;                                                    /* curseur en main au survol */
+  transition: transform 0.2s;                                         /* transition pour l'effet au survol */
+}
+
+/* -----------------------------
    Boutons de navigation
 ----------------------------- */
 .boutons {
   position: relative;                                                  /* permet à top de fonctionner */
-  top: -850px;                                                         /* décale les boutons vers le haut */
+  top: -860px;                                                         /* décale les boutons vers le haut */
   display: flex;                                                       /* utilise Flexbox pour l'alignement */
   justify-content: center;                                             /* centre les boutons horizontalement */
   gap: 100px;                                                          /* espace entre les boutons */
@@ -85,10 +100,10 @@ body {
   display: flex;                                                       /* permet d'aligner le contenu facilement */
   background: #63300e;                                               /* couleur de fond des boutons */
   color: #ffffff;                                                    /* couleur du texte des boutons */
-  width: 150px;                                                        /* largeur des boutons */
-  height: 240px;                                                       /* hauteur des boutons */
+  width: 160px;                                                        /* largeur des boutons */
+  height: 250px;                                                       /* hauteur des boutons */
   align-items: flex-end;                                               /* centre verticalement */
-  font-size: 20px;                                                     /* taille de la police des boutons */
+  font-size: 30px;                                                     /* taille de la police des boutons */
   border: none;                                                        /* pas de bordure */
   border-radius: 20px;                                                 /* arrondi des coins */
   padding: 12px 18px;                                                  /* espacement interne */

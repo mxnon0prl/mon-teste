@@ -56,34 +56,11 @@ html, body {
 }
 
 /* -----------------------------
-   Icônes en haut
------------------------------ */
-.iconesb {
-  position: relative;
-  top: -725px;
-  display: flex;
-  justify-content: center;
-  gap: 170px;
-  z-index: 6;
-}
-
-.iconesb img {
-  width: 90px;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.iconesb img:hover {
-  transform: scale(1.1);
-}
-
-/* -----------------------------
    Boutons de navigation avec icônes au-dessus
 ----------------------------- */
 .boutons {
   position: relative;
-  top: -860px;
+  top: -800px;
   display: flex;
   justify-content: center;
   gap: 100px;
@@ -134,10 +111,6 @@ html, body {
     top: 40%;
   }
 
-  .iconesb {
-    gap: 130px;
-  }
-
   .boutons {
     gap: 60px;
   }
@@ -172,12 +145,6 @@ html, body {
     left: 79%;
     transform: translateX(-50%);
     margin-top: 10px;
-  }
-
-  .iconesb {
-    position: relative;
-    top: 0vh;
-    gap: 20px;
   }
 
   /* Boutons */

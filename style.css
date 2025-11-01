@@ -1,4 +1,4 @@
-/* === Forcer le mode clair sur tous les appareils === */
+/* === Mode clair global === */
 :root {
   color-scheme: light;
 }
@@ -8,8 +8,16 @@ html, body {
   color: #ffffff !important;
   forced-color-adjust: none !important;
   -webkit-text-size-adjust: 100%;
+}
+
+/* -----------------------------
+   Base du site
+----------------------------- */
+body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #a1b7c4;
+  color: white;
   overflow-x: hidden;
 }
 
@@ -28,7 +36,7 @@ html, body {
 }
 
 /* -----------------------------
-   Arc
+   Arc décoratif
 ----------------------------- */
 .arc {
   top: 10px;
@@ -56,11 +64,30 @@ html, body {
 }
 
 /* -----------------------------
-   Boutons de navigation avec icônes au-dessus
+   Icônes (dessus des boutons)
+----------------------------- */
+.iconesb {
+  position: relative;
+  top: -725px;
+  display: flex;
+  justify-content: center;
+  gap: 170px;
+  z-index: 6;
+}
+
+.iconesb img {
+  width: 90px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* -----------------------------
+   Boutons de navigation
 ----------------------------- */
 .boutons {
   position: relative;
-  top: -725px;
+  top: -860px;
   display: flex;
   justify-content: center;
   gap: 100px;
@@ -70,7 +97,7 @@ html, body {
 
 .boutons button {
   display: flex;
-  flex-direction: column; /* icône au-dessus du texte */
+  flex-direction: column; /* icône au-dessus du texte sur PC */
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -94,32 +121,16 @@ html, body {
   background: #80441a;
 }
 
+/* Icônes intégrées dans les boutons */
 .btn-icon {
-  width: 80px; /* taille de l'image */
+  width: 80px;
   height: 80px;
 }
 
 /* -----------------------------
-   Responsive Design
+   Mobile (max 768px)
 ----------------------------- */
-
-/* Tablettes */
-@media (max-width: 1024px) {
-  .fleur {
-    width: 30vw;
-    right: 5%;
-    top: 40%;
-  }
-
-  .boutons {
-    gap: 60px;
-  }
-}
-
-/* Mobiles */
 @media (max-width: 768px) {
-
-  /* Bannière et arc */
   .banniere {
     height: 45vh;
     background-size: contain;
@@ -127,18 +138,11 @@ html, body {
   }
 
   .arc {
-    position: relative;
     top: -190px;
-    width: 100%;
     height: 40vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
   }
 
   .fleur {
-    position: relative;
     width: 43%;
     top: -73vh;
     right: 0;
@@ -147,47 +151,43 @@ html, body {
     margin-top: 10px;
   }
 
-  /* Boutons */
-  .boutons {
-    position: relative;
-    top: -115vh;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-  } 
-  
-  {
-  .boutons button {
-    display: flex;
-    flex-direction: row; /* conserve le texte à côté de l’icône */
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+  .iconesb {
+    top: 0vh;
+    gap: 20px;
+  }
 
-    width: 5px;
-    height: 7px;
+  .boutons {
+    top: -78vh;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  /* === Spécial mobile === */
+  .boutons button {
+    flex-direction: row; /* texte à côté, pas en colonne */
+    width: 90px;
+    height: 120px;
     font-size: 12px;
     border-radius: 12px;
     padding: 5px;
   }
 
   .btn-icon {
-    width: 7vh;
-    height: 12vh;
+    width: 10px;
+    height: 12px;
   }
 }
 
-
-/* PC très grands écrans */
+/* -----------------------------
+   PC grand écran (plus de 1025px)
+----------------------------- */
 @media (min-width: 1025px) {
   .arc {
-    position: relative;
     top: -220px;
   }
 }
+
 
 
 

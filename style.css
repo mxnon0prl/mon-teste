@@ -57,7 +57,7 @@ body {
 ----------------------------- */
 .fleur {
   position: absolute;                                                  /* permet à top/right de fonctionner */
-  top: 55%;                                                            /* décale la fleur vers le bas */
+  top: 50%;                                                            /* décale la fleur vers le bas */
   right: 0%;                                                           /* aligne la fleur à droite */
   width: 180vw;                                                        /* largeur de la fleur */
   max-width: 500px;                                                    /* largeur maximale */

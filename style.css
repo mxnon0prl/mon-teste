@@ -133,6 +133,10 @@ body {
   }
 }
 
+.iconesb {
+  gap: 130px;                                                          /* ajuste l'espace entre les icônes */
+} 
+
 /* Mobiles */
 @media (max-width: 768px) {
   .banniere {
@@ -162,6 +166,16 @@ body {
     transform: translateX(-50%);                                       /* centre horizontalement */
     margin-top: 10px;                                                  /* espace au-dessus de la fleur */
   }
+
+  .iconesb {
+    position: relative;                                                /* permet à top de fonctionner */
+    top: -85vh;                                                        /* décale les icônes vers le haut */
+    gap: 100px;                                                        /* réduit l'espace entre les icônes */
+  }
+
+  .iconesb img {
+    width: 70px;                                                       /* ajuste la taille des icônes */
+  } 
 
   .boutons {
     position: relative;                                                /* permet à top de fonctionner */

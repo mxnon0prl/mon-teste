@@ -167,8 +167,8 @@ html, body {
     justify-content: center;
     gap: 5px;
 
-    width: 90px;
-    height: 120px;
+    width: 5px;
+    height: 7px;
     font-size: 12px;
     border-radius: 12px;
     padding: 5px;
@@ -176,7 +176,7 @@ html, body {
 
   .btn-icon {
     width: 7vh;
-    height: 12vh;
+    height: 10vh;
   }
 }
 

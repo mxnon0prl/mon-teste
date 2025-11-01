@@ -64,30 +64,11 @@ body {
 }
 
 /* -----------------------------
-   Icônes (dessus des boutons)
------------------------------ */
-.iconesb {
-  position: relative;
-  top: -725px;
-  display: flex;
-  justify-content: center;
-  gap: 170px;
-  z-index: 6;
-}
-
-.iconesb img {
-  width: 90px;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-/* -----------------------------
    Boutons de navigation
 ----------------------------- */
 .boutons {
   position: relative;
-  top: -860px;
+  top: -800px;
   display: flex;
   justify-content: center;
   gap: 100px;

@@ -161,7 +161,7 @@ html, body {
   
   .boutons button {
     display: flex;
-    flex-direction: row; /* conserve le texte à côté de l’icône */
+    flex-direction: row; /* texte à côté de l’icône ou centré */
     align-items: center;
     justify-content: center;
     gap: 5px;
@@ -179,12 +179,6 @@ html, body {
   }
 }
 
-
-  .btn-icon {
-    width: 35px;
-    height: 35px;
-  }
-}
 
 /* PC très grands écrans */
 @media (min-width: 1025px) {

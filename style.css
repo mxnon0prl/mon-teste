@@ -159,31 +159,27 @@ html, body {
     margin-top: 20px;
   } 
   
+  {
   .boutons button {
-  display: flex;                                                      /* permet d'aligner le contenu facilement */
-  justify-content: center;                                            /* centre horizontalement */
-  align-items: flex-end;                                              /* centre verticalement */
-  text-align: center;                                                 /* centre le texte à l'intérieur */
-  line-height: normal;                                                /* évite le décalage du texte */
+    display: flex;
+    flex-direction: row; /* conserve le texte à côté de l’icône */
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 
-  /* ton style déjà existant */
-  background: #63300e;                                              /* couleur de fond des boutons */
-  color: #ffffff;                                                   /* couleur du texte des boutons */
-  width: 7vh;                                                         /* largeur des boutons */
-  height: 12vh;                                                       /* hauteur des boutons */
-  font-size: 10px;                                                    /* taille de la police des boutons */
-  border: none;                                                       /* pas de bordure */
-  border-radius: 15px;                                                /* arrondit les coins des boutons */
-  padding: 12px 18px;                                                 /* ajoute de l'espace à l'intérieur des boutons */
-  opacity: 0.85;                                                      /* opacité des boutons */
-  cursor: pointer;                                                    /* curseur en main au survol */
-  transition: transform 0.2s, background 0.2s;                        /* transitions pour les effets au survol */
-}
+    width: 90px;
+    height: 120px;
+    font-size: 12px;
+    border-radius: 12px;
+    padding: 5px;
+  }
+
   .btn-icon {
     width: 7vh;
     height: 12vh;
   }
 }
+
 
 
 

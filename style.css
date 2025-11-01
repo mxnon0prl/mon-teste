@@ -151,10 +151,6 @@ body {
     margin-top: 10px;
   }
 
-  .iconesb {
-    top: 0vh;
-    gap: 20px;
-  }
 
   .boutons {
     top: -78vh;
@@ -166,16 +162,16 @@ body {
   /* === Spécial mobile === */
   .boutons button {
     flex-direction: row; /* texte à côté, pas en colonne */
-    width: 90px;
-    height: 120px;
+    width: 10px;
+    height: 15;
     font-size: 12px;
     border-radius: 12px;
     padding: 5px;
   }
 
   .btn-icon {
-    width: 10px;
-    height: 12px;
+    width: 15px;
+    height: 17px;
   }
 }
 

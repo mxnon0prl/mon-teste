@@ -1,14 +1,16 @@
 /* === Forcer le mode clair sur tous les appareils === */
 :root {
-  color-scheme: only light !important; /* indique au navigateur de rester en clair */
+  color-scheme: light; /* indique au navigateur d’utiliser uniquement le thème clair */
 }
 
 /* Désactive le mode sombre automatique sur tous les navigateurs */
 html, body {
-  background-color: #a1b7c4 !important; /* ton fond clair */
+  background-color: #a1b7c4 !important; /* fond clair */
   color: #ffffff !important; /* couleur du texte */
-  forced-color-adjust: none !important; /* empêche l’inversion automatique des couleurs */
+  forced-color-adjust: none !important; /* empêche l’inversion des couleurs */
   -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* -----------------------------

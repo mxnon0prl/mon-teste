@@ -55,7 +55,7 @@ body {
 ----------------------------- */
 .fleur {
   position: absolute;                                                  /* permet à top/right de fonctionner */
-  top: 55%;                                                            /* décale la fleur vers le bas */
+  top: 60%;                                                            /* décale la fleur vers le bas */
   right: 0%;                                                           /* aligne la fleur à droite */
   width: 180vw;                                                        /* largeur de la fleur */
   max-width: 500px;                                                    /* largeur maximale */
@@ -153,8 +153,8 @@ body {
 
   background: #63300e;
   color: #ffffff;
-  width: 15px;
-  height: 55px;
+  width: 25px;
+  height: 65px;
   font-size: 30px;
   border: none;
   border-radius: 20px;
@@ -166,7 +166,7 @@ body {
 }
 
 .btn-icon {
-  width: 80px;   /* taille de l’image */
+  width: 50px;   /* taille de l’image */
   height: auto;
  }
 }

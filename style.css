@@ -96,11 +96,6 @@ body {
   line-height: normal;                                                 /* évite le décalage du texte */
 }
 
-.boutons button:hover {                                                /* styles au survol des boutons */
-  transform: scale(1.05);                                              /* agrandit légèrement le bouton au survol */
-  background: #80441a;                                               /* change la couleur de fond au survol */
-  }
-
 /* -----------------------------
    Responsive Design
 ----------------------------- */

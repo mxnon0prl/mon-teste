@@ -54,8 +54,8 @@ body {
    Fleur
 ----------------------------- */
 .fleur {
-  position: relative;
-  top: 90%;
+  position: absolue;
+  top: 40%;
   right: 0%;
   width: 180vw;
   max-width: 500px;

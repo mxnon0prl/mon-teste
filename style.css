@@ -65,24 +65,6 @@ body {
 }
 
 /* -----------------------------
-   icones
------------------------------ */
-.iconesb {
-  position: relative;                                                  /* permet à top de fonctionner */
-  top: -725px;                                                         /* décale les boutons vers le haut */
-  display: flex;                                                       /* utilise Flexbox pour l'alignement */
-  justify-content: center;                                             /* centre les boutons horizontalement */
-  gap: 170px;                                                          /* espace entre les boutons */
-  z-index: 6;                                                          /* place l'icône au-dessus de l'arc */
-}
-
-.iconesb img {
-  width: 90px;                                                        /* largeur des icônes */
-  height: auto;                                                       /* hauteur automatique pour conserver les proportions */
-  transition: transform 0.2s;                                         /* transition pour l'effet au survol */
-}
-
-/* -----------------------------
    Boutons de navigation
 ----------------------------- */
 .boutons {
@@ -132,10 +114,6 @@ body {
   }
 }
 
-.iconesb {
-  gap: 130px;                                                          /* ajuste l'espace entre les icônes */
-} 
-
 /* Mobiles */
 @media (max-width: 768px) {
   .banniere {
@@ -165,16 +143,6 @@ body {
     transform: translateX(-50%);                                       /* centre horizontalement */
     margin-top: 10px;                                                  /* espace au-dessus de la fleur */
   }
-
-  .iconesb {
-    position: relative;                                                /* permet à top de fonctionner */
-    top: -85vh;                                                        /* décale les icônes vers le haut */
-    gap: 100px;                                                        /* réduit l'espace entre les icônes */
-  }
-
-  .iconesb img {
-    width: 70px;                                                       /* ajuste la taille des icônes */
-  } 
 
   .boutons {
     position: relative;                                                /* permet à top de fonctionner */

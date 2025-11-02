@@ -1,53 +1,53 @@
-/* === Mode clair global === */
+/* === Forcer le mode clair sur tous les appareils === */
 :root {
-  color-scheme: light;
+  color-scheme: light;                                                /* indique au navigateur de rester en clair */
 }
 
-html, body {
-  background-color: #a1b7c4 !important;
-  color: #ffffff !important;
-  forced-color-adjust: none !important;
-  -webkit-text-size-adjust: 100%;
+html, body {                                                          /* applique le style à toute la page */
+  background-color: #a1b7c4 !important;                             /* ta couleur de fond claire */
+  color: #ffffff !important;                                        /* couleur du texte */
+  forced-color-adjust: none !important;                               /* bloque le mode sombre automatique */
+  -webkit-text-size-adjust: 100%;                                     /* empêche le zoom automatique sur iOS */
+
 }
 
 /* -----------------------------
    Base du site
 ----------------------------- */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #a1b7c4;
-  color: white;
-  overflow-x: hidden;
+  margin: 0;                                                          /* supprime les marges par défaut */  
+  font-family: Arial, sans-serif;                                     /* définit la police de caractères */ 
+  background-color: #a1b7c4;                                        /* couleur de fond claire */ 
+  color: white;                                                     /* couleur du texte */
+  overflow-x: hidden;                                                 /* empêche le défilement horizontal */
 }
 
 /* -----------------------------
    Bannière principale
 ----------------------------- */
 .banniere {
-  width: 100%;
-  height: 100vh;
-  background-image: url('banniere/bannier2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
+  width: 100%;                                                         /* occupe toute la largeur de l'écran */
+  height: 100vh;                                                        /* hauteur de la bannière */
+  background-image: url('banniere/bannier2.png');                      /* image de fond de la bannière */
+  background-size: cover;                                              /* couvre toute la bannière */
+  background-position: center;                                         /* centre l'image */
+  background-repeat: no-repeat;                                        /* n'affiche pas l'image en mosaïque */
+  position: relative;                                                  /* permet de positionner les éléments enfants */
+  z-index: 1;                                                          /* place la bannière en arrière-plan */
 }
 
 /* -----------------------------
-   Arc décoratif
+   Arc (sous la bannière)
 ----------------------------- */
 .arc {
-  position: relative;
-  top: -100px;
-  width: 100%;
-  height: 100vh;
-  background-image: url('banniere/arc_de_cercle.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
+  top: 10px;                                                            /* décale l'arc vers le haut */
+  width: 100%;                                                         /* occupe toute la largeur de l'écran */
+  height: 100vh;                                                        /* hauteur de l'arc */
+  background-image: url('banniere/arc_de_cercle.png');                 /* image de fond de l'arc */
+  background-size: cover;                                              /* couvre toute la zone de l'arc */
+  background-position: center;                                         /* centre l'image */
+  background-repeat: no-repeat;                                        /* n'affiche pas l'image en mosaïque */
+  z-index: 1;                                                          /* place l'arc en arrière-plan */
 }
 
 /* -----------------------------
@@ -55,7 +55,7 @@ body {
 ----------------------------- */
 .fleur {
   position: absolute;                                                  /* permet à top/right de fonctionner */
-  top: 60%;                                                            /* décale la fleur vers le bas */
+  top: 55%;                                                            /* décale la fleur vers le bas */
   right: 0%;                                                           /* aligne la fleur à droite */
   width: 180vw;                                                        /* largeur de la fleur */
   max-width: 500px;                                                    /* largeur maximale */
@@ -65,82 +65,123 @@ body {
 }
 
 /* -----------------------------
-   Boutons de navigation
+   icones
 ----------------------------- */
-.boutons {
-  position: relative;
-  top: -800px;
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  flex-wrap: wrap;
-  z-index: 5;
+.iconesb {
+  position: relative;                                                  /* permet à top de fonctionner */
+  top: -725px;                                                         /* décale les boutons vers le haut */
+  display: flex;                                                       /* utilise Flexbox pour l'alignement */
+  justify-content: center;                                             /* centre les boutons horizontalement */
+  gap: 170px;                                                          /* espace entre les boutons */
+  z-index: 6;                                                          /* place l'icône au-dessus de l'arc */
 }
 
-.boutons button {
-  display: flex;
-  flex-direction: column; /* icône au-dessus du texte sur PC */
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  position: relative;
-  
-  background: #63300e;
-  color: #ffffff;
-  width: 160px;
-  height: 250px;
-  font-size: 30px;
-  border: none;
-  border-radius: 20px;
-  padding: 12px 18px;
-  opacity: 0.85;
-  cursor: pointer;
-  transition: transform 0.2s, background 0.2s;
-  text-align: center;
-}
-
-.boutons button:hover {
-  transform: scale(1.05);
-  background: #80441a;
-}
-
-/* Icônes intégrées dans les boutons */
-.btn-icon {
-  width: 80px;
-  height: 80px;
+.iconesb img {
+  width: 90px;                                                        /* largeur des icônes */
+  height: auto;                                                       /* hauteur automatique pour conserver les proportions */
+  transition: transform 0.2s;                                         /* transition pour l'effet au survol */
 }
 
 /* -----------------------------
-   Mobile (max 768px)
+   Boutons de navigation
 ----------------------------- */
+.boutons {
+  position: relative;                                                  /* permet à top de fonctionner */
+  top: -860px;                                                         /* décale les boutons vers le haut */
+  display: flex;                                                       /* utilise Flexbox pour l'alignement */
+  justify-content: center;                                             /* centre les boutons horizontalement */
+  gap: 100px;                                                          /* espace entre les boutons */
+  flex-wrap: wrap;                                                     /* permet aux boutons de passer à la ligne si nécessaire */
+  z-index: 5;                                                          /* place les boutons au-dessus de l'arc */ 
+}
+
+.boutons button {
+  display: flex;                                                       /* permet d'aligner le contenu facilement */
+  background: #63300e;                                               /* couleur de fond des boutons */
+  color: #ffffff;                                                    /* couleur du texte des boutons */
+  width: 160px;                                                        /* largeur des boutons */
+  height: 250px;                                                       /* hauteur des boutons */
+  align-items: flex-end;                                               /* centre verticalement */
+  font-size: 30px;                                                     /* taille de la police des boutons */
+  border: none;                                                        /* pas de bordure */
+  border-radius: 20px;                                                 /* arrondi des coins */
+  padding: 12px 18px;                                                  /* espacement interne */
+  opacity: 0.85;                                                       /* opacité des boutons */
+  cursor: pointer;                                                     /* curseur en main au survol */
+  transition: transform 0.2s, background 0.2s;                         /* transitions pour les effets au survol */
+  justify-content: center;                                             /* centre horizontalement */
+  text-align: center;                                                  /* centre le texte à l'intérieur */
+  line-height: normal;                                                 /* évite le décalage du texte */
+}
+
+.boutons button:hover {                                                /* styles au survol des boutons */
+  transform: scale(1.05);                                              /* agrandit légèrement le bouton au survol */
+  background: #80441a;                                               /* change la couleur de fond au survol */
+  }
+
+/* -----------------------------
+   Responsive Design
+----------------------------- */
+
+/* Tablettes */
+@media (max-width: 1024px) {   
+  .fleur {
+    width: 30vw;                                                       /* ajuste la taille de la fleur */
+    right: 5%;                                                         /* ajuste la position de la fleur */
+    top: 40%;                                                          /* ajuste la position de la fleur */
+  }
+}
+
+.iconesb {
+  gap: 130px;                                                          /* ajuste l'espace entre les icônes */
+} 
+
+/* Mobiles */
 @media (max-width: 768px) {
   .banniere {
-    height: 45vh;
-    background-size: contain;
-    background-position: top;
+    height: 45vh;                                                      /* ajuste la hauteur de la bannière */
+    background-size: contain;                                          /* ajuste la taille de l'image de fond */
+    background-position: top;                                          /* ajuste la position de l'image de fond */
   }
 
   .arc {
-    top: 0px;
-    height: 40vh;
-    position: relative;
-  }
+  position: relative;                                                  /* permet à top/left de fonctionner */
+  top: -190px;                                                         /* décale l'arc vers le haut */
+  width: 100%;                                                         /* occupe toute la largeur de l'écran */
+  height: 40vh;                                                        /* ajuste la hauteur de l'arc */
+  background-image: url('banniere/arc_de_cercle.png');                 /* image de fond de l'arc */
+  background-size: cover;                                              /* couvre toute la zone de l'arc */
+  background-position: center;                                         /* centre l'image */
+  background-repeat: no-repeat;                                        /* n'affiche pas l'image en mosaïque */
+  z-index: 1;                                                          /* place l'arc en arrière-plan */
+}
 
   .fleur {
-    width: 43%;
-    top: -73vh;
-    right: 0;
-    left: 79%;
-    transform: translateX(-50%);
-    margin-top: 10px;
+    position: relative;                                                /* permet à top/right/left de fonctionner */
+    width: 43%;                                                        /* ajuste la taille de la fleur */
+    top: -73vh;                                                        /* ajuste la position de la fleur */
+    right: 0;                                                          /* ajuste la position de la fleur */
+    left: 79%;                                                         /* ajuste la position de la fleur */
+    transform: translateX(-50%);                                       /* centre horizontalement */
+    margin-top: 10px;                                                  /* espace au-dessus de la fleur */
   }
 
+  .iconesb {
+    position: relative;                                                /* permet à top de fonctionner */
+    top: -85vh;                                                        /* décale les icônes vers le haut */
+    gap: 100px;                                                        /* réduit l'espace entre les icônes */
+  }
+
+  .iconesb img {
+    width: 70px;                                                       /* ajuste la taille des icônes */
+  } 
 
   .boutons {
-    top: 100vh;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
+    position: relative;                                                /* permet à top de fonctionner */
+    top: -78vh;                                                        /* décale les boutons vers le haut */
+    align-items: center;                                               /* centre les boutons verticalement */
+    gap: 20px;                                                         /* réduit l'espace entre les boutons */ 
+    margin-top: 20px;                                                  /* espace au-dessus des boutons */
   }
 
  .boutons button {

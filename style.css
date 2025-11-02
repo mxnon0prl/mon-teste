@@ -54,14 +54,14 @@ body {
    Fleur
 ----------------------------- */
 .fleur {
-  position: absolue;
-  top: 40%;
-  right: 0%;
-  width: 180vw;
-  max-width: 500px;
-  height: auto;
-  opacity: 0.8;
-  z-index: 3;
+  position: absolute;                                                  /* permet à top/right de fonctionner */
+  top: 55%;                                                            /* décale la fleur vers le bas */
+  right: 0%;                                                           /* aligne la fleur à droite */
+  width: 180vw;                                                        /* largeur de la fleur */
+  max-width: 500px;                                                    /* largeur maximale */
+  height: auto;                                                        /* hauteur automatique */
+  opacity: 0.8;                                                        /* rend la fleur légèrement transparente */
+  z-index: 3;                                                          /* place la fleur au-dessus de la bannière et de l'arc */
 }
 
 /* -----------------------------

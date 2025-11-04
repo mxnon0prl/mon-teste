@@ -109,6 +109,7 @@ html, body {
   /* Code spécifique aux tablettes */
 
   .boutons {
+    position: relative
     flex-direction: row; /* ou column selon ton choix */
     gap: 40px; /* espace un peu plus serré que sur PC */
      width: 80px;

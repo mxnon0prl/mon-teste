@@ -111,8 +111,8 @@ html, body {
   .boutons {
     flex-direction: row; /* ou column selon ton choix */
     gap: 40px; /* espace un peu plus serré que sur PC */
-     width: 100px;
-    height: 140px;
+     width: 80px;
+    height: 120px;
   }
 
   .banniere {

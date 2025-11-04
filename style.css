@@ -103,26 +103,26 @@ html, body {
    Responsive Design
 ----------------------------- */
 
-/* TABLETTES */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* tablette */
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+  /* Code spécifique aux tablettes */
+
   .boutons {
-    gap: 60px; /* espace un peu réduit */
-    top: -300px;
-    width: 100px;
-    height: 140px
-    
+    flex-direction: row; /* ou column selon ton choix */
+    gap: 40px; /* espace un peu plus serré que sur PC */
+  }
+
+  .banniere {
+    height: 70vh; /* un peu plus petite que sur PC */
   }
 
   .fleur {
     width: 35vw;
-    top: 40%;
-    right: 5%;
-  }
-
-  .arc {
-    top: -150px;
+    top: 50%;
   }
 }
+
 
 /* Mobiles */
 @media (max-width: 768px) {

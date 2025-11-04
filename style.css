@@ -162,15 +162,15 @@ html, body {
   .boutons button {
     width: 50px;
     height: 80px;
-    font-size: 12px;
+    font-size: 10px;
     border-radius: 12px;
     padding: 5px;
     gap: 5px;
   }
 
   .btn-icon {
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
   }
 }
 

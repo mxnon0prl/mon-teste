@@ -108,6 +108,9 @@ html, body {
   .boutons {
     gap: 60px; /* espace un peu réduit */
     top: -300px;
+    width: 100px;
+    height: 140px
+    
   }
 
   .fleur {

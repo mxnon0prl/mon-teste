@@ -103,16 +103,21 @@ html, body {
    Responsive Design
 ----------------------------- */
 
-/* Tablettes */
-@media (max-width: 1024px) {
-  .fleur {
-    width: 30vw;
-    right: 5%;
-    top: 40%;
+/* TABLETTES */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .boutons {
+    gap: 60px; /* espace un peu réduit */
+    top: -300px;
   }
 
-  .boutons {
-    gap: 60px;
+  .fleur {
+    width: 35vw;
+    top: 40%;
+    right: 5%;
+  }
+
+  .arc {
+    top: -150px;
   }
 }
 

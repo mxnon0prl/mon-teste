@@ -120,6 +120,7 @@ html, body {
   }
 
   .fleur {
+    position: retative
     width: 40vw;
     top: 60%;
   }

@@ -140,6 +140,7 @@ html, body {
   }
 
   .fleur {
+    position: relative; 
     width: 30vw;
     top: 45%;
   }

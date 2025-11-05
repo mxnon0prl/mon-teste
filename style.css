@@ -181,7 +181,7 @@ html, body {
   .boutons {
     position: relative;
     top: -78vh;
-    flex-direction: colume;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;

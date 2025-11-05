@@ -180,7 +180,7 @@ html, body {
   .boutons {
     position: relative;
     top: -78vh;
-    flex-direction: row;
+    flex-direction: colume;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;

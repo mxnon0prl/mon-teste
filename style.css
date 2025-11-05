@@ -95,8 +95,8 @@ html, body {
 }
 
 .btn-icon {
-  width: 100px; /* taille de l'image */
-  height: 100px;
+  width: 80px; /* taille de l'image */
+  height: 80px;
 }
 
 /* -----------------------------
@@ -146,7 +146,7 @@ html, body {
 }
 
 /* Mobiles */
-@media screen and (max-width: 768px) and (hover: none) and (pointer: coarse) {
+@media (max-width: 768px) {
 
   /* Bannière et arc */
   .banniere {
@@ -178,29 +178,24 @@ html, body {
 
   /* Boutons */
   .boutons {
-    display: flex;
-    flex-direction: row;          /* En ligne */
-    justify-content: center;      /* Centre horizontalement */
-    align-items: center;          /* Centre verticalement */
-    flex-wrap: nowrap;            /* Pas de retour à la ligne */
-    gap: 10px;                    /* Espace entre les boutons */
     position: relative;
-    top: -70vh;                   /* Ajuste la hauteur des boutons */
-    left: 50%;                    /* Centre horizontalement */
-    transform: translateX(-50%);
-    width: max-content;
-    margin: 0 auto;
-    z-index: 5;
+    top: -78vh;
+    flex-direction: colume;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
   }
 
   .boutons button {
-    width: 80px;                  /* Taille des boutons sur téléphone */
-    height: 110px;
+    width: 50px;
+    height: 80px;
     font-size: 10px;
     border-radius: 12px;
+    padding: 5px;
+    gap: 5px;
   }
-}
-
 
   .btn-icon {
     width: 33px;
@@ -215,7 +210,6 @@ html, body {
     top: -220px;
   }
 }
-
 
 
 

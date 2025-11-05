@@ -112,8 +112,8 @@ html, body {
     position: relative
     flex-direction: row; /* ou column selon ton choix */
     gap: 40px; /* espace un peu plus serré que sur PC */
-     width: 80px;
-    height: 120px;
+     width: 50px;
+    height: 90px;
   }
 
   .banniere {

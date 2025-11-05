@@ -109,7 +109,7 @@ html, body {
   /* TABLETTE EN MODE VERTICAL */
 
   .boutons {
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
     width: 50px;
     height: 80px;
@@ -134,10 +134,6 @@ html, body {
     width: 30px;
     height: 60px;
   }
-
-  .banniere {
-  width: 100%;
-  height: 100vh;
 
   .arc {
     top: -200px;

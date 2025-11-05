@@ -105,27 +105,41 @@ html, body {
 
 /* tablette */
 
-  @media (max-width: 1024px) and (min-width: 769px) {
-  /* Code spécifique aux tablettes */
+ @media (max-width: 1024px) and (orientation: portrait) {
+  /* TABLETTE EN MODE VERTICAL */
 
   .boutons {
-    position: relative
-    flex-direction: row; /* ou column selon ton choix */
-    gap: 40px; /* espace un peu plus serré que sur PC */
-     width: 50px;
-    height: 90px;
+    flex-direction: column;
+    gap: 30px;
   }
 
-  .banniere {
-    height: 70vh; /* un peu plus petite que sur PC */
+  .arc {
+    top: -150px;
   }
 
   .fleur {
-    width: 35vw;
-    top: 50%;
+    width: 40vw;
+    top: 60%;
   }
 }
 
+@media (max-width: 1024px) and (orientation: landscape) {
+  /* TABLETTE EN MODE HORIZONTAL */
+
+  .boutons {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .arc {
+    top: -200px;
+  }
+
+  .fleur {
+    width: 30vw;
+    top: 45%;
+  }
+}
 
 /* Mobiles */
 @media (max-width: 768px) {

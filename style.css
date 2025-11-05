@@ -107,11 +107,6 @@ html, body {
 
  @media (max-width: 1024px) and (orientation: portrait) {
   /* TABLETTE EN MODE VERTICAL */
-   
-  body {
-    background-color: orange !important;
-  }
-}
 
   .boutons {
     flex-direction: row;
@@ -134,6 +129,11 @@ html, body {
 @media (max-width: 1024px) and (orientation: landscape) {
   /* TABLETTE EN MODE HORIZONTAL */
 
+body {
+    background-color: blue !important;
+  }
+}
+  
   .boutons {
     flex-direction: row;
     gap: 50px;

@@ -128,11 +128,6 @@ html, body {
 
 @media (max-width: 1024px) and (orientation: landscape) {
   /* TABLETTE EN MODE HORIZONTAL */
-
-body {
-    background-color: blue !important;
-  }
-}
   
   .boutons {
     flex-direction: row;

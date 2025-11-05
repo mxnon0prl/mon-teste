@@ -107,6 +107,11 @@ html, body {
 
  @media (max-width: 1024px) and (orientation: portrait) {
   /* TABLETTE EN MODE VERTICAL */
+   
+  body {
+    background-color: orange !important;
+  }
+}
 
   .boutons {
     flex-direction: row;

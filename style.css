@@ -138,18 +138,9 @@ html, body {
   .banniere {
   width: 100%;
   height: 100vh;
-  background-image: url('banniere/bannier2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
 
   .arc {
     top: -200px;
-    background-image: url('banniere/arc_de_cercle.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .fleur {

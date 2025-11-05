@@ -180,14 +180,18 @@ html, body {
   /* Boutons */
   .boutons {
     display: flex;
-    flex-direction: row;       /* Les boutons restent en ligne horizontale */
-    justify-content: center;   /* Centre les boutons */
-    align-items: center;       /* Aligne verticalement */
-    flex-wrap: nowrap;         /* Empêche de passer à la ligne */
+    flex-direction: row;       /* Les boutons restent en ligne */
+    justify-content: center;   /* Centre horizontalement */
+    align-items: center;       /* Centre verticalement */
+    flex-wrap: nowrap;         /* Empêche le retour à la ligne */
     gap: 10px;                 /* Espace entre les boutons */
     position: relative;
-    top: -70vh;                /* Ajuste la hauteur si besoin */
-    margin-top: 20px;
+    top: -70vh;                /* Ajuste si les boutons sont trop hauts ou trop bas */
+    left: 50%;                 /* Décale à moitié de l’écran */
+    transform: translateX(-50%); /* Centre parfaitement horizontalement */
+    width: max-content;        /* Ajuste la largeur selon le contenu */
+    margin: 0 auto;            /* Garde le centrage */
+    z-index: 5;
   }
 
   .boutons button {

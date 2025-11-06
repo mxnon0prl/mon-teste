@@ -213,27 +213,26 @@ html, body {
   }
 }
   @media screen and (max-width: 768px) {
-  .boutons {
-    display: flex;
-    flex-direction: row;        /* alignés horizontalement */
-    justify-content: center;    /* centrage horizontal */
-    align-items: center;        /* centrage vertical */
-    gap: 10px;                  /* espace entre les boutons */
-    width: 100%;                /* occupe toute la largeur */
-    margin: 0 auto;             /* centre le conteneur */
-    position: relative;
-    top: -75vh;                 /* ajuste la hauteur */
-    flex-wrap: wrap;            /* permet le retour à la ligne si trop serré */
-  }
+.boutons button {
+  display: flex;
+  flex-direction: column;       /* place l'image au-dessus du texte */
+  justify-content: flex-end;    /* pousse le texte vers le bas */
+  align-items: center;          /* centre horizontalement */
+  text-align: center;           /* aligne le texte au centre */
+  gap: 8px;                     /* espace entre image et texte */
 
-  .boutons button {
-    width: 60px;                /* largeur adaptée */
-    height: 90px;
-    font-size: 11px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;    /* texte centré dans le bouton */
-    align-items: flex-end;      /* texte vers le bas */
+  /* ton style existant */
+  background: #63300e;
+  color: #ffffff;
+  width: 90px;
+  height: 120px;
+  font-size: 11px;
+  border: none;
+  border-radius: 12px;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
 
      .btn-icon {
     width: 33px;

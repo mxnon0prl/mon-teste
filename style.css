@@ -179,12 +179,14 @@ html, body {
   /* Boutons */
   .boutons {
     display: flex;
-    flex-direction: row;          /* En ligne */ 
+    flex-direction: row;          /* En ligne */
+    justify-content: center;      /* Centre horizontalement */
+    align-items: center;          /* Centre verticalement */
     flex-wrap: nowrap;            /* Pas de retour à la ligne */
     gap: 10px;                    /* Espace entre les boutons */
     position: relative;
     top: -70vh;                   /* Ajuste la hauteur des boutons */
-    left: 20%;                    /* Centre horizontalement */
+    left: 50%;                    /* Centre horizontalement */
     transform: translateX(-50%);
     width: max-content;
     margin: 0 auto;
@@ -192,13 +194,12 @@ html, body {
   }
 
   .boutons button {
-    width: 50px;                  /* Taille des boutons sur téléphone */
-    height: 90px;
+    width: 80px;                  /* Taille des boutons sur téléphone */
+    height: 110px;
     font-size: 10px;
     border-radius: 12px;
   }
 }
-
   .btn-icon {
     width: 33px;
     height: 33px;

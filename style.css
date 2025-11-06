@@ -179,13 +179,12 @@ html, body {
   /* Boutons */
   .boutons {
     display: flex;
-    flex-direction: row;          /* En ligne */
-    left: 50%; 
+    flex-direction: row;          /* En ligne */ 
     flex-wrap: nowrap;            /* Pas de retour à la ligne */
     gap: 10px;                    /* Espace entre les boutons */
     position: relative;
     top: -70vh;                   /* Ajuste la hauteur des boutons */
-    left: 50%;                    /* Centre horizontalement */
+    left: 20%;                    /* Centre horizontalement */
     transform: translateX(-50%);
     width: max-content;
     margin: 0 auto;

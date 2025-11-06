@@ -180,6 +180,7 @@ html, body {
   .boutons {
     display: flex;
     flex-direction: row;          /* En ligne */
+    left: 50%;
     justify-content: center;      /* Centre horizontalement */
     align-items: center;          /* Centre verticalement */
     flex-wrap: nowrap;            /* Pas de retour à la ligne */

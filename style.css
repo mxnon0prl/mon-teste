@@ -227,8 +227,8 @@ html, body {
   }
 
   .boutons button {
-    width: 90px;                /* largeur adaptée */
-    height: 120px;
+    width: 50px;                /* largeur adaptée */
+    height: 80px;
     font-size: 11px;
     border-radius: 12px;
     display: flex;

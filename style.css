@@ -240,6 +240,20 @@ html, body {
   }
 }
 
+  @media screen and (max-width: 768px) {
+  .boutons {
+    display: flex;
+    flex-wrap: wrap;            /* pour que ça aille à la ligne si besoin */
+    justify-content: center;    /* centre horizontalement */
+    align-items: center;        /* centre verticalement */
+    gap: 15px;                  /* espace entre les boutons */
+    width: 100%;
+    margin: 0 auto;             /* centre le conteneur */
+    position: relative;
+    top: 0 !important;          /* empêche les décalages */
+  }
+}
+
 
 
 

@@ -234,6 +234,10 @@ html, body {
     display: flex;
     justify-content: center;    /* texte centré dans le bouton */
     align-items: flex-end;      /* texte vers le bas */
+
+     .btn-icon {
+    width: 33px;
+    height: 33px;
   }
 }
 

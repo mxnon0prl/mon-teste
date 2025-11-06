@@ -194,8 +194,8 @@ html, body {
   }
 
   .boutons button {
-    width: 80px;                  /* Taille des boutons sur téléphone */
-    height: 110px;
+    width: 50px;                  /* Taille des boutons sur téléphone */
+    height: 80px;
     font-size: 10px;
     border-radius: 12px;
   }

@@ -166,7 +166,7 @@ html, body {
   /* Arc placé juste sous la bannière */
   .arc {
     position: relative;
-    top: -50px;                     /* ajuste le décalage selon ton visuel */
+    top: 0px;                     /* ajuste le décalage selon ton visuel */
     height: 40vh;                   /* un peu moins haut que sur PC */
     background-size: contain;       /* évite les coupures */
     background-position: center;
@@ -176,8 +176,8 @@ html, body {
   .fleur {
     position: absolute;
     width: 35vw;                    /* taille adaptée à la tablette */
-    top: 55%;                       /* un peu plus bas */
-    right: 5%;                      /* légèrement vers la droite */
+    top: 20%;                       /* un peu plus bas */
+    left: 79%;                      /* légèrement vers la droite */
     transform: translateY(-20%);    /* ajuste le centrage vertical */
     z-index: 3;
   }
@@ -185,11 +185,11 @@ html, body {
   /* Boutons centrés et espacés correctement */
   .boutons {
     position: relative;
-    top: -150px;                    /* ajuste selon le visuel */
+    top: -100px;                    /* ajuste selon le visuel */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;                      /* espace entre les boutons */
+    gap: 35px;                      /* espace entre les boutons */
   }
 
   .boutons button {

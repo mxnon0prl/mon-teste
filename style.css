@@ -140,7 +140,7 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;                     /* espace entre boutons */
+    gap: 4px;                     /* espace entre boutons */
   }
 
   .boutons button {
@@ -166,7 +166,7 @@ html, body {
   /* Arc placé juste sous la bannière */
   .arc {
     position: relative;
-    top: -350px;                     /* ajuste le décalage selon ton visuel */
+    top: -390px;                     /* ajuste le décalage selon ton visuel */
     height: 40vh;                   /* un peu moins haut que sur PC */
     background-size: contain;       /* évite les coupures */
     background-position: center;
@@ -185,7 +185,7 @@ html, body {
   /* Boutons centrés et espacés correctement */
   .boutons {
     position: relative;
-    top: -650px;                    /* ajuste selon le visuel */
+    top: -750px;                    /* ajuste selon le visuel */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

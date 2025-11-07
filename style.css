@@ -166,7 +166,7 @@ html, body {
   /* Arc placé juste sous la bannière */
   .arc {
     position: relative;
-    top: -150px;                     /* ajuste le décalage selon ton visuel */
+    top: -300px;                     /* ajuste le décalage selon ton visuel */
     height: 40vh;                   /* un peu moins haut que sur PC */
     background-size: contain;       /* évite les coupures */
     background-position: center;
@@ -177,7 +177,7 @@ html, body {
     position: absolute;
     width: 35vw;                    /* taille adaptée à la tablette */
     top: 22%;                       /* un peu plus bas */
-    left: 70%;                      /* légèrement vers la droite */
+    left: 58%;                      /* légèrement vers la droite */
     transform: translateY(-20%);    /* ajuste le centrage vertical */
     z-index: 3;
   }
@@ -185,7 +185,7 @@ html, body {
   /* Boutons centrés et espacés correctement */
   .boutons {
     position: relative;
-    top: -350px;                    /* ajuste selon le visuel */
+    top: -550px;                    /* ajuste selon le visuel */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

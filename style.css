@@ -70,7 +70,7 @@ html, body {
 
 .boutons button {
   display: flex;
-  flex-direction: column; /* image au-dessus du texte */
+  flex-direction: column; /* image au-dessus du texte /
   align-items: center;
   justify-content: center;
   gap: 10px; /* espace entre image et texte 

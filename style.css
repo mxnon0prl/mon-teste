@@ -105,7 +105,7 @@ html, body {
 ----------------------------- */
 @media (max-width: 1024px) {
   .boutons {
-    gap: 40px;
+    gap: 20px;
     top: -600px;
   }
 
@@ -125,6 +125,55 @@ html, body {
   }
 }
 
+/* ================================
+   TABLETTES — MODE PORTRAIT
+   ================================ */
+@media (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+
+  /* Bannière visible entièrement */
+  .banniere {
+    height: 60vh;                   /* hauteur réduite mais visible */
+    background-size: contain;       /* affiche toute l’image sans la couper */
+    background-position: top;       /* colle l’image en haut */
+  }
+
+  /* Arc placé juste sous la bannière */
+  .arc {
+    position: relative;
+    top: -50px;                     /* ajuste le décalage selon ton visuel */
+    height: 40vh;                   /* un peu moins haut que sur PC */
+    background-size: contain;       /* évite les coupures */
+    background-position: center;
+  }
+
+  /* Fleur repositionnée */
+  .fleur {
+    position: absolute;
+    width: 35vw;                    /* taille adaptée à la tablette */
+    top: 55%;                       /* un peu plus bas */
+    right: 5%;                      /* légèrement vers la droite */
+    transform: translateY(-20%);    /* ajuste le centrage vertical */
+    z-index: 3;
+  }
+
+  /* Boutons centrés et espacés correctement */
+  .boutons {
+    position: relative;
+    top: -150px;                    /* ajuste selon le visuel */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;                      /* espace entre les boutons */
+  }
+
+  .boutons button {
+    width: 130px;
+    height: 200px;
+    font-size: 20px;
+  }
+}
+
+
 /* -----------------------------
    MOBILES
 ----------------------------- */
@@ -143,7 +192,7 @@ html, body {
   .fleur {
     width: 45%;
     top:  15vh;
-    left: 72%;
+    left: 78%;
     transform: translateX(-50%);
   }
 

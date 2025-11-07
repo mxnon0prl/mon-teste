@@ -100,30 +100,56 @@ html, body {
   height: 80px;
 }
 
-/* -----------------------------
-   TABLETTES
------------------------------ */
-@media (max-width: 1024px) {
+/* ================================
+   TABLETTES — MODE PAYSAGE
+   ================================ */
+@media (min-width: 600px) and (max-width: 1024px) and (orientation: landscape) {
+
+  /* Bannière bien visible sur la largeur */
+  .banniere {
+    height: 70vh;
+    background-size: cover;        /* remplit bien l’écran */
+    background-position: center;   /* garde l’image centrée */
+  }
+
+  /* Arc juste sous la bannière */
+  .arc {
+    position: relative;
+    top: -100px;                   /* ajuste si besoin */
+    height: 60vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Fleur ajustée pour paysage */
+  .fleur {
+    position: absolute;
+    width: 25vw;                   /* plus petite en paysage */
+    top: 45%;                      /* ajuste la hauteur */
+    right: 10%;                    /* garde un léger décalage */
+    transform: translateY(-10%);
+    z-index: 3;
+  }
+
+  /* Boutons centrés horizontalement */
   .boutons {
-    gap: 20px;
-    top: -600px;
+    position: relative;
+    top: -200px;                   /* décale les boutons selon ton visuel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;                     /* espace entre boutons */
   }
 
   .boutons button {
-    width: 130px;
-    height: 200px;
-    font-size: 18px;
-  }
-
-  .arc {
-    top: -100px;
-  }
-
-  .fleur {
-    width: 40vw;
-    top: 60%;
+    width: 140px;
+    height: 210px;
+    font-size: 22px;
   }
 }
+
 
 /* ================================
    TABLETTES — MODE PORTRAIT
@@ -191,7 +217,7 @@ html, body {
 
   .fleur {
     width: 45%;
-    top:  15vh;
+    top:  12vh;
     left: 78%;
     transform: translateX(-50%);
   }
@@ -201,7 +227,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     top: -400px;
   }
 

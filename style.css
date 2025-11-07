@@ -376,7 +376,7 @@ html, body {
 
   .fleur {
     width: 45%;
-    top: -70vh;
+    top:  0vh;
     left: 75%;
     transform: translateX(-50%);
   }
@@ -391,13 +391,13 @@ html, body {
   }
 
   .boutons button {
-    width: 90px;
-    height: 120px;
+    width: 60px;
+    height: 90px;
     font-size: 10px;
   }
 
   .boutons button img {
-    width: 40px;
+    width: 30px;
     height: auto;
   }
 }

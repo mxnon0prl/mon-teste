@@ -190,7 +190,7 @@ html, body {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    top: 0 !important;
+    top: -100 !important;
   }
 
   /* Boutons */
@@ -205,7 +205,7 @@ html, body {
     /* 👉 Ces valeurs sont modifiables */
     width: 60px;              /* ← ajuste ici la largeur */
     height: 90px;             /* ← ajuste ici la hauteur */
-    font-size: 10px;           /* ← ajuste ici la taille du texte */
+    font-size: 8px;           /* ← ajuste ici la taille du texte */
 
     /* Styles visuels */
     background: #63300e;
@@ -219,7 +219,7 @@ html, body {
 
   /* Image dans les boutons */
   .boutons button img {
-    width: 10px;               /* ← modifie ici la taille de l’image */
+    width: 20px;               /* ← modifie ici la taille de l’image */
     height: auto;
   }
 }

@@ -200,12 +200,12 @@ html, body {
     justify-content: center;      /* centre verticalement */
     align-items: center;          /* centre horizontalement */
     text-align: center;           /* centre le texte */
-    gap: 8px;                     /* espace entre image et texte */
+    gap: 10px;                     /* espace entre image et texte */
 
     /* garde la taille d’origine */
-    width: 150px;
-    height: 240px;
-    font-size: 18px;
+    width: 60px;
+    height: 90px;
+    font-size: 10px;
 
     /* tes styles d’origine */
     background: #63300e;
@@ -219,7 +219,7 @@ html, body {
 
   /* Image à l’intérieur du bouton (si tu en as une) */
   .boutons button img {
-    width: 80px;                  /* taille fixe, pas de rapetissement */
+    width: 10px;                  /* taille fixe, pas de rapetissement */
     height: auto;
     display: block;
   }

@@ -125,7 +125,7 @@ html, body {
   /* Fleur ajustée pour paysage */
   .fleur {
     position: absolute;
-    width: 25vw;                   /* plus petite en paysage */
+    width: 10vw;                   /* plus petite en paysage */
     top: 45%;                      /* ajuste la hauteur */
     right: 10%;                    /* garde un léger décalage */
     transform: translateY(-10%);
@@ -144,8 +144,8 @@ html, body {
   }
 
   .boutons button {
-    width: 100px;
-    height: 170px;
+    width: 60px;
+    height: 90px;
     font-size: 22px;
   }
 }
@@ -166,7 +166,7 @@ html, body {
   /* Arc placé juste sous la bannière */
   .arc {
     position: relative;
-    top: -300px;                     /* ajuste le décalage selon ton visuel */
+    top: -350px;                     /* ajuste le décalage selon ton visuel */
     height: 40vh;                   /* un peu moins haut que sur PC */
     background-size: contain;       /* évite les coupures */
     background-position: center;
@@ -177,7 +177,7 @@ html, body {
     position: absolute;
     width: 35vw;                    /* taille adaptée à la tablette */
     top: 22%;                       /* un peu plus bas */
-    left: 58%;                      /* légèrement vers la droite */
+    left: 65%;                      /* légèrement vers la droite */
     transform: translateY(-20%);    /* ajuste le centrage vertical */
     z-index: 3;
   }
@@ -185,7 +185,7 @@ html, body {
   /* Boutons centrés et espacés correctement */
   .boutons {
     position: relative;
-    top: -550px;                    /* ajuste selon le visuel */
+    top: -650px;                    /* ajuste selon le visuel */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

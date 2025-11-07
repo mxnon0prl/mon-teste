@@ -177,37 +177,37 @@ html, body {
   }
 
   /* Boutons */
-  /* === Centrage parfait des boutons sur téléphone === */
+  /* === Version mobile === */
 @media screen and (max-width: 768px) {
 
-  /* Conteneur des boutons */
+  /* Conteneur principal */
   .boutons {
     display: flex;
-    flex-wrap: wrap;              /* permet de passer à la ligne si besoin */
-    justify-content: center;      /* centre les boutons horizontalement */
-    align-items: center;          /* centre verticalement */
-    gap: 20px;                    /* espace entre les boutons */
+    flex-wrap: wrap;
+    justify-content: center;   /* centre horizontalement */
+    align-items: center;       /* centre verticalement */
+    gap: 20px;
     width: 100%;
-    margin: 0 auto;               /* centre le bloc */
+    margin: 0 auto;
     position: relative;
-    top: 0 !important;            /* empêche les décalages verticaux */
+    top: 0 !important;
   }
 
-  /* Boutons eux-mêmes */
+  /* Boutons */
   .boutons button {
-    display: flex;                /* pour pouvoir centrer le contenu */
-    flex-direction: column;       /* met l’image au-dessus du texte */
-    justify-content: center;      /* centre verticalement */
-    align-items: center;          /* centre horizontalement */
-    text-align: center;           /* centre le texte */
-    gap: 10px;                     /* espace entre image et texte */
+    display: flex;
+    flex-direction: column;    /* image au-dessus, texte en dessous */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;                 /* espace entre l’image et le texte */
 
-    /* garde la taille d’origine */
-    width: 60px;
-    height: 90px;
-    font-size: 10px;
+    /* 👉 Ces valeurs sont modifiables */
+    width: 60px;              /* ← ajuste ici la largeur */
+    height: 90px;             /* ← ajuste ici la hauteur */
+    font-size: 10px;           /* ← ajuste ici la taille du texte */
 
-    /* tes styles d’origine */
+    /* Styles visuels */
     background: #63300e;
     color: #ffffff;
     border: none;
@@ -217,14 +217,12 @@ html, body {
     transition: transform 0.2s, background 0.2s;
   }
 
-  /* Image à l’intérieur du bouton (si tu en as une) */
+  /* Image dans les boutons */
   .boutons button img {
-    width: 10px;                  /* taille fixe, pas de rapetissement */
+    width: 10px;               /* ← modifie ici la taille de l’image */
     height: auto;
-    display: block;
   }
 }
-
 /* PC très grands écrans */
 @media (min-width: 1025px) {
   .arc {
